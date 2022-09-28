@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css ">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="div1">
+                <img class="logo" src="../img/icoRacing.png" alt="Escudo de Racing">
+                <h1>CLUB ATLETICO RACING</h1>
+            </div>
+            <p data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="subt">Sitio oficial del Club Atlético Racing<br> Fundado el 12 de mayo de 1937</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="institucion.html">INSTITUCION</a>
+                    </li>
+                    <li>
+                        <a href="futbol.html">FUTBOL</a>
+                    </li>
+                    <li>
+                        <a href="basquetbol.html">BASQUETBOL</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>  
+        </header>   
+        
+        <main>
+            <section>
+                <form>
+                    <fieldset id="campos">
+                        <div class="lineaFormulario">
+                            <label>Nombres</label>
+                            <input type="text">
+                        </div>
+    
+                        <div class="lineaFormulario" >
+                            <label>Apellidos</label>
+                            <input type="text">
+                        </div>
+    
+                        <div class="lineaFormulario">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+    
+                        <div class="lineaFormulario">
+                            <label>Edad</label>
+                            <input type="number">
+                        </div>
+    
+                        <div class="lineaFormulario">
+                            <label>Género</label>
+                            <input type="radio" name="genero"> Hombre
+                            <input type="radio" name="genero"> Mujer
+                            <input type="radio" name="genero"> Otros
+                        </div>
+    
+                        <div class="lineaFormulario">
+                            <label>Mensaje</label>
+                            <textarea></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset id="botones" class="botones">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Restablecer">           
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p class="footerParrafo">
+                Todos los derechos reservados <br> Sitio creado por Enzo Sanguinetti
+            </p>
+            <div class="iconoDiv">
+               <a href="https://www.facebook.com/" target="_blank">
+                <img src="../img/icons8-facebook.svg" alt="iconoFacebook"></a>
+               <a href="https://www.instagram.com/clubatleticoracing_/" target="_blank">
+                <img src="../img/icons8-instagram.svg" alt="iconoInstagram"></a> 
+               <a href=""></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank">
+                <img src="../img/icons8-twitter.svg" alt="iconoTwitter">
+               </a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
