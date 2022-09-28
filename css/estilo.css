@@ -5,7 +5,6 @@
 
 .contenedor{
    display: grid;
-   display: grid;
    grid-template-columns: 1;
    grid-template-rows: 1;
    grid-template-areas: 
@@ -77,7 +76,10 @@ a{
 /* css para body */
 
 body{
-    background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
+    background: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
 /* css para index.html */
@@ -360,7 +362,7 @@ footer{
 
 @media (max-width: 1200px) {
     body{
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
@@ -380,6 +382,20 @@ footer{
 
 @media (max-width: 768px) {
 
+    .contenedor{
+        justify-content: space-around;
+    }
+
+    .parrafito{
+        margin-right: 0em;
+        font-style: none;
+    }
+
+    
+.parrafitoSegundaSeccion{
+    margin-left: 0em;
+    font-style: none;
+}
    
     .tituloBasquetbol {
         margin-top: 2.25em;
