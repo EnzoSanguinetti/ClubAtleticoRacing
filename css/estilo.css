@@ -89,6 +89,9 @@ a{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+a:hover{
+    color: rgb(8, 61, 8);
+}
 
 /* css para body */
 
@@ -377,20 +380,13 @@ footer{
     align-content: center;
 }
 
-/* Vista Desktops 1200px*/
-
-@media (max-width: 1200px) {
-    body{
-        font-size: 16px;
-    }
-
-}
 
 /* Vista Desktops */
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 800px) {
     body{
         font-size: 16px;
+        overflow-x: hidden;
     }
 
 }
@@ -399,7 +395,7 @@ footer{
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 600px) {
 
     .contenedor{
         justify-content: space-around;
@@ -514,7 +510,36 @@ footer{
 
 /* Vista Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 350px) {
+
+    .contenedor{
+        justify-content: space-around;
+    }
+
+    body{
+        background: none;
+        background-repeat: none;
+        background-size: none;
+        background-position: none;
+        overflow-x: hidden;
+        background-color: azure;
+    }
+
+    .div1Flex{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div2Flex{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     ul{
         font-size: 0.90em;
@@ -544,14 +569,6 @@ footer{
         font-size: 2.5em;
     }
 
-    .parrafito{
-        margin-bottom: 2.125em;
-        margin-right: 1.125em;
-        margin-left: 1.125em;
-        color: rgb(0, 2, 1);
-        font-weight: bold;
-        font-size: 1em;
-    }
 
     .img1:hover{
         transform: none;
@@ -568,13 +585,6 @@ footer{
     }
 
 
-    .parrafitoSegundaSeccion{
-        margin-bottom: 2.125em;
-        margin-left: 1.125em;
-        margin-right: 1.125;
-        font-size: 1em;
-    }
-
     .img2:hover{
         transform: none;
     }
@@ -587,5 +597,104 @@ footer{
     .iconoDiv{
         align-items: center;
     }
+    
+}
+
+/* Vista Mobile */
+
+@media (max-width: 350px) and (min-width: 0px) {
+
+    .contenedor{
+        justify-content: space-around;
+    }
+
+    body{
+        background: none;
+        background-repeat: none;
+        background-size: none;
+        background-position: none;
+        overflow-x: hidden;
+        background-color: azure;
+    }
+
+    .img1:hover{
+        transform: none;
+    }
+
+    .img2:hover{
+        transform: none;
+    }
+
+    
+    .div1Flex{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div2Flex{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul{
+        font-size: 0.6em;
+        justify-content: space-evenly
+    }
+    
+    .logo{
+        margin-top: 0.5em;
+        height: 3em;
+    }
+    
+    
+    h1{
+        font-size: 1em;
+    }
+    
+    .subt{
+        font-size: 0.7em;
+        margin-right: 1em;
+    }
+
+
+    .parrafo{
+        margin: 7% 0% 2% 0%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .parrafito{
+        margin-bottom: 2.125em;
+        margin-right: 1em;
+        margin-left: 1em;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .hito{
+        margin: 7% 0% 2% 0%;
+        font-size: 1.3em;
+    }
+
+
+    .parrafitoSegundaSeccion{
+        margin-bottom: 2.125em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 1em;
+    }
+
+
+
+    .footerParrafo{
+        font-size: 10px;
+    }
+
     
 }
