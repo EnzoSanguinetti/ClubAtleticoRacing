@@ -589,6 +589,57 @@ footer{
         transform: none;
     }
 
+    .tituloBasquetbol{
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 1.5em;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .basquetbolParrafo {
+        margin-top: 1.7em;
+        font-size: 0.8em;
+    }
+
+    .tituloFutbol{
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .futbolParrafo {
+        margin-top: 1.7em;
+        font-size: 0.8em;
+    }
+
+    .imagenesDeInstitucion{ 
+        display: flex;
+        justify-content: center;
+        height: 10em;
+        text-align: left;
+        margin-top: 1.125em;
+        margin-bottom: 1.125em;
+        border: solid 0em;
+        margin-left: 0em;
+        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
+    }
+
+    .basquetbolCampeones{
+        display: flex;
+        justify-content: center;
+        height: 10em;
+        text-align: left;
+        margin-top: 1.125em;
+        margin-bottom: 1.3em;
+        border: solid 0px;
+        margin-left: 0em;
+        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
+    }
 
     .footerParrafo{
         font-size: 13px;
@@ -690,7 +741,57 @@ footer{
         font-size: 1em;
     }
 
+    .tituloBasquetbol{
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 1.5em;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
 
+    .basquetbolParrafo {
+        margin-top: 1.7em;
+        font-size: 0.8em;
+    }
+
+    .tituloFutbol{
+        margin-top: 1em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .futbolParrafo {
+        margin-top: 1.7em;
+        font-size: 0.8em;
+    }
+
+    .imagenesDeInstitucion{ 
+        display: flex;
+        justify-content: center;
+        height: 10em;
+        text-align: left;
+        margin-top: 1.125em;
+        margin-bottom: 1.125em;
+        border: solid 0em;
+        margin-left: 0em;
+        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
+    }
+
+    .basquetbolCampeones{
+        display: flex;
+        justify-content: center;
+        height: 10em;
+        text-align: left;
+        margin-top: 1.125em;
+        margin-bottom: 1.3em;
+        border: solid 0px;
+        margin-left: 0em;
+        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
+    }
 
     .footerParrafo{
         font-size: 10px;
