@@ -97,11 +97,7 @@ a:hover{
 /* css para body */
 
 body{
-    background: url(../img/fondo.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background-color: azure;
     overflow-x: hidden;
 }
 
@@ -114,11 +110,11 @@ main{
 .parrafo{
     display: flex;
     justify-content: center;
-    margin: 10% 0% 3% 0%;
+    margin: 10% 0% 10% 0%;
     font-size: 3.125em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgb(0 0 0 / 30%);
 }
 
 .parrafito{
@@ -156,11 +152,11 @@ main{
 }
 
 .hito{
-    margin: 10% 0% 3% 0%;
+    margin: 10% 0% 10% 0%;
     font-size: 2.5em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgb(0 0 0 / 30%);
 }
 
 
@@ -364,7 +360,7 @@ footer{
 
 @media (max-width: 992px) and (min-width: 800px) {
     body{
-        font-size: 16px;
+        font-size: 1rem;
         overflow-x: hidden;
     }
 
@@ -375,6 +371,14 @@ footer{
 
 
 @media (max-width: 800px) and (min-width: 600px) {
+
+    .carousel-fade{
+        margin-left: 12.5rem;
+    }
+
+    .carousel-fade2{
+        margin-left: 12.5rem;
+    }
 
     header{
         height: 100%;
@@ -412,7 +416,7 @@ footer{
         margin-top: 2.25em;
         text-align: center;
         color: rgb(4, 53, 14);
-        font-size: 2.125em;
+        font-size: 1.5em;
         font-weight: bold;
         box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
     }
@@ -421,7 +425,7 @@ footer{
         margin-top: 2.375em;
         text-align: center;
         color: rgb(4, 53, 14);
-        font-size: 2.125rem;
+        font-size: 1.5rem;
         font-weight: bold;
         box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
     }
@@ -432,7 +436,7 @@ footer{
     }
 
     h1{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .div1Flex{
@@ -460,7 +464,9 @@ footer{
     }
 
     .iconoDiv{
-        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
     }
 
     .hito{
@@ -473,6 +479,18 @@ footer{
 /* Vista Mobile */
 
 @media (max-width: 600px) and (min-width: 350px) {
+
+    header{
+        height: 100%;
+    }
+
+    .carousel-fade{
+        margin-left: 7.5rem;
+    }
+
+    .carousel-fade2{
+        margin-left: 7.5rem;
+    }
 
     .contenedor{
         display: flex;
@@ -508,21 +526,25 @@ footer{
 
     ul{
         font-size: 0.90em;
-        justify-content: space-evenly
     }
     
     .logo{
         margin-top: 0.5em;
+        margin-bottom: 1em;
         height: 3.75em;
     }
     
     
     h1{
-        font-size: 1.2em;
+        margin-bottom: 1.2em;
+        font-size: 1em;
+        border: none;
     }
     
     .subt{
         margin-right: 1.5em;
+        margin-top: 1em;
+        font-size: 0.9em;
     }
 
     body{
@@ -530,8 +552,14 @@ footer{
     }
 
     .parrafo{
-        margin: 7% 0% 2% 0%;
-        font-size: 2.5em;
+        margin: 7% 0% 5% 0%;
+        font-size: 2em;
+    }
+
+    .parrafito{
+        text-align: center;
+        margin-right: 0em;
+        margin-bottom: 1em;
     }
 
 
@@ -545,8 +573,14 @@ footer{
     }
 
     .hito{
-        margin: 7% 0% 2% 0%;
+        margin: 30% 0% 5% 0%;
         font-size: 1.5em;
+    }
+
+    .parrafitoSegundaSeccion{
+        text-align: center;
+        margin-left: 0em;
+        margin-bottom: 0.5em;
     }
 
 
@@ -565,7 +599,7 @@ footer{
 
     .basquetbolParrafo {
         margin-top: 1.7em;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .tituloFutbol{
@@ -579,39 +613,17 @@ footer{
 
     .futbolParrafo {
         margin-top: 1.7em;
-        font-size: 0.8em;
-    }
-
-    .imagenesDeInstitucion{ 
-        display: flex;
-        justify-content: center;
-        height: 10em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.125em;
-        border: solid 0em;
-        margin-left: 0em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
-    }
-
-    .basquetbolCampeones{
-        display: flex;
-        justify-content: center;
-        height: 10em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.3em;
-        border: solid 0px;
-        margin-left: 0em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
+        font-size: 1em;
     }
 
     .footerParrafo{
-        font-size: 13px;
+        font-size: 0.9em;
     }
 
     .iconoDiv{
-        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
     }
     
 }
@@ -626,6 +638,27 @@ footer{
         justify-content: space-around;
     }
 
+    header{
+        padding: 0.3125rem;
+    }
+
+    .carousel-fade{
+        margin-left: 6.25rem;
+    }
+
+    .carousel-fade2{
+        margin-left: 6.25rem;
+    }
+
+    h1{
+        font-size: 0.8em;
+        font-weight: none;
+    }
+    
+    .subt{
+        margin-right: 0em;
+    }
+
     body{
         width: 100%;
         background: none;
@@ -634,6 +667,7 @@ footer{
         background-position: none;
         overflow-x: hidden;
         background-color: azure;
+        font-size: 16px;
     }
 
     .img1:hover{
@@ -668,16 +702,22 @@ footer{
     
     .logo{
         margin-top: 0.5em;
-        height: 3em;
+        height: 5em;
     }
     
-    
     h1{
-        font-size: 1em;
+        border-radius: none;
+        border: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: rgb(0, 2, 1);
+        font-style: oblique;
+        font-size: 0.9em;
     }
     
     .subt{
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin-right: 1em;
     }
 
@@ -720,7 +760,7 @@ footer{
 
     .basquetbolParrafo {
         margin-top: 1.7em;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .tituloFutbol{
@@ -734,11 +774,17 @@ footer{
 
     .futbolParrafo {
         margin-top: 1.7em;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .footerParrafo{
-        font-size: 10px;
+        font-size: 16px;
+    }
+
+    .iconoDiv{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
     }
 
     
