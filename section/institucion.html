@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css ">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,55 +15,91 @@
             <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000" class="div1">
-                <img class="logo" src="../img/icoRacing.png" alt="Escudo de Racing">
-                <h1>CLUB ATLETICO RACING</h1>
-            </div>
+                <div class="logoyh1">
+                    <img class="logo" src="../img/icoRacing.png" alt="Escudo de Racing">
+                    <h1>CLUB ATLETICO RACING</h1>
+                </div>
             <p data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine" class="subt">Sitio oficial del Club Atlético Racing<br> Fundado el 12 de mayo de 1937</p>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">INICIO</a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                     </li>
-                    <li>
-                        <a href="institucion.html">INSTITUCION</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="institucion.html">INSTITUCION</a>
                     </li>
-                    <li>
-                        <a href="futbol.html">FUTBOL</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="futbol.html">FUTBOL</a>
                     </li>
-                    <li>
-                        <a href="basquetbol.html">BASQUETBOL</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="basquetbol.html">BASQUETBOL</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">CONTACTO</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
                     </li>
                 </ul>
-            </nav>  
+                </div>
+                </div>
+            </nav> 
         </header>
     
             <main>
             <section>
-                <h2 data-aos="zoom-out" class="tituloFutbol">TITULOS OBTENIDOS EN EL FUTBOL</h2>
+                <h2  class="tituloFutbol">TITULOS OBTENIDOS EN EL FUTBOL</h2>
                 <p class="futbolParrafo">
                     En cuanto a salir campeón de futbol se trata, Racing lo consiguió en 5 ocaciónes. <br><br>
                     Su primer título fue en el año 1992, tuvieron que pasar 16 años para que vuelva a salir puntero y coronarse campeón en el año 2008, seguido del campeonato histórico donde terminó levantando la copa de manera invicta en el año 2009. <br>
                     En 2011 y 20015 vuelve a levantar sus ultimas dos copas hasta el momento.
                 </p>
-                <div class="imagenesDeInstitucion">
-                    <img data-aos="zoom-in-left" src="../img/institucionFutbol.jpg" alt="racingCampeon"> 
-                    <img data-aos="zoom-in-right" src="../img/institucionFutbolDos.jpg" alt="racingCampeonDos"> 
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/institucionFutbol.jpg" class="d-block w-100" alt="racingCampeon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/institucionFutbolDos.jpg" class="d-block w-100" alt="racingCampeonDos">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
             <section>
-                <h2 data-aos="zoom-out" class="tituloBasquetbol">TITULOS OBTENIDOS EN EL BASQUETBOL</h2>
+                <h2 class="tituloBasquetbol">TITULOS OBTENIDOS EN EL BASQUETBOL</h2>
                 <p class="basquetbolParrafo">
                 En cuanto al Basquetbol, Racing tiene 3 titulos de liga. <br><br>
                 En 1990 levanta su primer trofeo en el deporte y 18 más tarde, se consagra bicampeón en el 2008/2009.
                 </p>
-                <div class="basquetbolCampeones">
-                    <img data-aos="zoom-in-left" src="../img/basquetbolCampeones.jpg" alt="campeonesBasquetbol">
-                    <img data-aos="zoom-in-right" src="../img/basquetbolCampeonesDos.jpg" alt="campeonesBasquetbol">
+                <div id="carouselExampleControls" class="carousel slide carousel-fade2" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/basquetbolCampeones.jpg" class="d-block w-100" alt="basquetbolCampeones">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/basquetbolCampeonesDos.jpg" class="d-block w-100" alt="basquetbolCampeonesDos">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
         </main>
@@ -85,10 +121,8 @@
             </div>
         </footer>
     </div>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        </script>
+
+    <!-- scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

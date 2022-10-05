@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+
     padding: 0%;
 }
 
@@ -34,23 +35,27 @@ footer{
 
 header{
     background-color: rgb(38, 124, 38);
-    position: sticky;
     top: 0.0125em;
-    border-radius: 0.625em;
+    border-radius: 0.33em;
     border: solid 0.125em;
     box-shadow: inset 0.25em -0.25em 1.875em 0.25em rgba(0,0,0,10);
     z-index: 2;
 }
 
+.logoyh1{
+    display: flex;
+    align-items: flex-end;
+}
+
 .logo{
-    margin-top: 0.625em;
+    margin-top: 0.725em;
     height: 6.25em;
 }
 
 .div1{
-    margin-left: 6.25em;
     display: flex;
     align-items: flex-end;
+    justify-content: space-around;
 }
 
 h1{
@@ -65,25 +70,21 @@ h1{
 }
 
 .subt{
+    text-align: right;
     color:  rgb(224, 219, 219);
-    margin-right: 6.25em;
-    text-align: center;
-    display: flex;
-    justify-content: end;
-    align-items: center;
 }
 
-ul{
-    list-style-type: none;
-    font-size: 1.25em;
-    background-color: ghostwhite;
-    border-radius: 0.625em;
-    border: solid 0.0625em;
-    display: flex;
-    justify-content: space-evenly
+.navbar{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.navbar-collapse{
+    justify-content: center;
 }
 
 a{
+    margin-right: 100px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -97,6 +98,7 @@ a:hover{
 
 body{
     background: url(../img/fondo.jpg);
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -116,7 +118,7 @@ main{
     font-size: 3.125em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    
 }
 
 .parrafito{
@@ -158,7 +160,7 @@ main{
     font-size: 2.5em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    
 }
 
 
@@ -195,6 +197,17 @@ main{
 
 /* css para institucion.html */
 
+.carousel-fade{
+    margin-left: 300px;
+    width: 50%;
+}
+
+.carousel-fade2{
+    margin-left: 300px;
+    width: 50%;
+    margin-bottom: 70px;
+}
+
 .tituloFutbol {
     margin-top: 4.375em;
     text-align: center;
@@ -212,16 +225,6 @@ main{
     font-weight: bold;
 }
 
-.imagenesDeInstitucion {
-    width: 45em;
-    text-align: left;
-    margin-top: 3.125em;
-    margin-bottom: 3.125em;
-    border: solid 0.125em;
-    margin-left: 19.375em;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-}
-
 .tituloBasquetbol {
     margin-top: 3.25em;
     text-align: center;
@@ -237,17 +240,6 @@ main{
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-}
-
-.basquetbolCampeones {
-    width: 45em;
-    text-align: left;
-    margin-top: 3.125em;
-    margin-bottom: 3.125em;
-    border: solid 2px;
-    margin-left: 19.375em;
-    margin-bottom: 6.25em;
-    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
 }
 
 /* css para futbol.html */
@@ -341,39 +333,26 @@ textarea{
 /* css para footer */
 
 footer{
-    border-radius: 0.625em;
+    border-radius: 0.33em;
     border: solid 2px;
     background-color: rgb(38, 124, 38);
-    padding: 3.125em;
+    padding: 2.125em;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
     "footerParrafo"
     "iconoDiv iconoDiv iconoDiv";
     box-shadow: inset 0.25em -0.25em 1.875em 0.25em rgba(0,0,0,0.7);
-}
-
-.footerParrafo{
-    border-radius: 0.625em;
-    border-start-end-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border: solid 1px;
-    border-left: none;
-    border-right: none;
-    color: rgb(223, 219, 219);
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
+.footerParrafo{
+    color: rgb(223, 219, 219);
+    display: flex;
+    justify-content: flex-end;
+}
+
 .iconoDiv{
-    border-radius: 0.625em;
-    border-start-start-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border: solid 1px;
-    color: rgb(224, 219, 219);
-    border-left: none;
-    border-right: none;
     display: flex;
     justify-content: flex-end;
     text-align: center;
@@ -397,11 +376,18 @@ footer{
 
 @media (max-width: 800px) and (min-width: 600px) {
 
+    header{
+        height: 100%;
+    }
+
     .contenedor{
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
 
     body{
+        width: 100%;
         background: none;
         background-repeat: none;
         background-size: none;
@@ -438,30 +424,6 @@ footer{
         font-size: 2.125rem;
         font-weight: bold;
         box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-    .imagenesDeInstitucion{ 
-        display: flex;
-        justify-content: flex-end;
-        height: 20em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.125em;
-        border: solid 0em;
-        margin-left: 10.375em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
-    }
-
-    .basquetbolCampeones{
-        display: flex;
-        justify-content: flex-end;
-        height: 20em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.125em;
-        border: solid 0px;
-        margin-left: 10.375em;
-        margin-bottom: 3.25em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
     }
     
     .logo{
@@ -513,10 +475,13 @@ footer{
 @media (max-width: 600px) and (min-width: 350px) {
 
     .contenedor{
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
 
     body{
+        width: 100%;
         background: none;
         background-repeat: none;
         background-size: none;
@@ -656,10 +621,13 @@ footer{
 @media (max-width: 350px) and (min-width: 0px) {
 
     .contenedor{
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
 
     body{
+        width: 100%;
         background: none;
         background-repeat: none;
         background-size: none;
@@ -767,30 +735,6 @@ footer{
     .futbolParrafo {
         margin-top: 1.7em;
         font-size: 0.8em;
-    }
-
-    .imagenesDeInstitucion{ 
-        display: flex;
-        justify-content: center;
-        height: 10em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.125em;
-        border: solid 0em;
-        margin-left: 0em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
-    }
-
-    .basquetbolCampeones{
-        display: flex;
-        justify-content: center;
-        height: 10em;
-        text-align: left;
-        margin-top: 1.125em;
-        margin-bottom: 1.3em;
-        border: solid 0px;
-        margin-left: 0em;
-        box-shadow: 0em 0em 0em 0em rgba(0,0,0,0.3);
     }
 
     .footerParrafo{
