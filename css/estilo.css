@@ -360,7 +360,7 @@ footer{
 
 @media (max-width: 992px) and (min-width: 800px) {
     body{
-        font-size: 1rem;
+        font-size: 1em;
         overflow-x: hidden;
     }
 
@@ -373,11 +373,13 @@ footer{
 @media (max-width: 800px) and (min-width: 600px) {
 
     .carousel-fade{
-        margin-left: 12.5rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     .carousel-fade2{
-        margin-left: 12.5rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     header{
@@ -485,11 +487,13 @@ footer{
     }
 
     .carousel-fade{
-        margin-left: 7.5rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     .carousel-fade2{
-        margin-left: 7.5rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     .contenedor{
@@ -643,11 +647,13 @@ footer{
     }
 
     .carousel-fade{
-        margin-left: 6.25rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     .carousel-fade2{
-        margin-left: 6.25rem;
+        width: 100%;
+        margin-left: 0rem;
     }
 
     h1{
