@@ -240,48 +240,135 @@ main{
 
 /* css para futbol.html */
 
-.tablaFutbol{
-    margin-top: 9.375em;
-    margin-left: 40.625em;
-    margin-bottom: 18.75em;
-    width: 37.5em;
-    text-align: left;
-    border: solid 2px;
+.gridMain{
+    display: grid;
+    grid-template-columns: 4fr;
+}
+
+.divF{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.clasificados{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+}
+
+.versus{
+    font-weight: bold;
+}
+
+.raVsAr{
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.parrafoF{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tablaF{
+    display: grid
+}
+
+.h2F{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-left: 150px;
+}
+
+.parrafoF{
+    margin-left: 50px;
+    text-align: center;
 }
 
 table{
-    width: 100%;
-    background-color: rgb(253, 255, 253);
-    border-collapse: collapse;
-}
-
-thead{
-    background-color: rgb(64, 128, 64);
-    border-bottom: solid 2px;
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
 }
 
 th, td{
-    padding: 0.625em;
+    padding: 5px;
+    text-align: center;
+}
+
+thead{
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
 }
 
 .racingPos{
-    font-weight: bold;
-    background-color: rgb(202, 200, 198);
+    background-color: rgb(165, 165, 165);
 }
+
+.ultimos{
+    display: grid
+}
+
+
 
 /* css para basquetbol.html */
 
-.tablaBasquetbol{
-    margin-top: 9.375em;
-    margin-right: 28.125em;
-    margin-left: 6.25em;
-    margin-bottom: 18.75em;
-    width: 37.5em;
-    text-align: left;
-    border: solid 3px;
+.parrafoB{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablaB{
+    display: grid
+}
+
+.h2B{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 150px;
+}
+
+.parrafoB{
+    margin-right: 50px;
+    text-align: center;
 }
 
 /* css para contacto.html */
+
+.mainG{
+    display: grid;
+    justify-content: center;
+}
+
+.divC{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.icoP{
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(0,0,0,0.3);
+}
+
+.bxsh{
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(0,0,0,0.3);
+}
+
+.pC{
+    font-weight: bolder;
+}
 
 fieldset{
     border: none;
@@ -293,17 +380,10 @@ fieldset{
 }
 
 form{
-    background-color: rgb(206, 205, 205);
-    border: solid 1px;
-    color: rgb(5, 63, 5);
-    border-radius: 10%;
-    padding: 0.625em;
-    margin-right: 59.375em;
-    margin-bottom: 18.75em;
-    margin-top: 3.125em;
-    margin-left: 3.125em;
-    text-align: left;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
 }
 
 label{
@@ -321,8 +401,7 @@ textarea{
 }
 
 .botones{
-    text-align: right;
-    margin-right: 0.375em;
+    margin-right: 0em;
 }
 
 
@@ -475,6 +554,30 @@ footer{
         margin: 7% 0% 2% 0%;
         font-size: 1.9em;
     }
+
+    .clasificados{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .h2F{
+        font-size: 1.8em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-left: 30px;
+    }
+
+    .h2B{
+        font-size: 1.8em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-right: 20px;
+    }
+
 
 }
 
@@ -629,7 +732,54 @@ footer{
         flex-wrap: wrap;
         align-content: flex-end;
     }
-    
+
+    .tablaF{
+        display: grid;
+        justify-content: center;
+    }
+
+    .parrafoF{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .clasificados{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .h2F{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-left: 55px;
+    }
+
+    .h2B{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .parrafoB{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+    tr, th, td{
+        padding: 10px;
+    }
 }
 
 /* Vista Mobile */
@@ -793,5 +943,46 @@ footer{
         align-content: flex-end;
     }
 
-    
+    .parrafoF{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    th, td{
+        padding: 4px;
+        text-align: center;
+    }
+
+    .clasificados{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    }
+
+    .h2F{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-left: 55px;
+    }
+
+    .h2B{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .parrafoB{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin-left: 10px;
+    }
 }
