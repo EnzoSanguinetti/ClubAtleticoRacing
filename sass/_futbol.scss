@@ -1,0 +1,65 @@
+/* css para futbol.html */
+
+.gridMain{
+    display: grid;
+    grid-template-columns: 4fr;
+    .divF{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        .clasificados{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 2em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .versus {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        .raVsAr {
+            font-size: 30px;
+            color: darkgreen;
+        }
+    }
+    }
+    .tablaF{
+        display: grid
+    }
+    .parrafoF{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        table {
+            width: 30%;
+            border: solid 2px;
+            margin-bottom: 5em;
+            margin-top: 5em;
+            background-color: rgb(246, 248, 250);
+        }
+            thead{
+                background-color: green;
+                border-bottom: solid 2px black;
+                color: white;
+            }
+            .racingPos{
+                background-color: rgb(165, 165, 165);
+            }
+            th, td{
+                padding: 5px;
+                text-align: center;
+            }
+        }
+        .h2F{
+            font-size: 2em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            margin-left: 150px;
+        }
+        .parrafoF {
+            margin-left: 50px;
+            text-align: center;
+            font-weight: bolder;
+        }

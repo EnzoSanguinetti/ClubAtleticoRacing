@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+
+    padding: 0%;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+}
+
+header{
+    grid-area: header;
+}
+
+.seccionUno{
+    grid-area: seccionUno;
+}
+
+.seccionDos{
+    grid-area: seccionDos;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 4;
+    grid-template-areas: 
+    "header header header header"
+    "seccionUno seccionUno seccionUno seccionUno"
+    "seccionDos seccionDos seccionDos seccionDos"
+    "footer footer footer footer";
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}

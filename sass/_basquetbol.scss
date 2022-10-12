@@ -1,0 +1,23 @@
+/* css para basquetbol.html */
+
+.tablaB{
+    display: grid
+}
+.parrafoB{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafoB{
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+.h2B{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 150px;
+}
