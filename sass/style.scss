@@ -1,15 +1,18 @@
 @import "fuentes";
 @import "generales";
-@import "_body";
-@import "_mediaqueries";
-@import "_header";
-@import "_index";
-@import "_institucion";
-@import "_futbol";
-@import "_basquetbol";
-@import "_contacto";
-@import "_footer";
+@import "body";
+@import "mediaqueries";
+@import "header";
+@import "index";
+@import "institucion";
+@import "futbol";
+@import "basquetbol";
+@import "contacto";
+@import "footer";
+
 
 /* no me toma los cambios en el sitio web, pero si en el archivo style.css, es decir, no me permite modificar fuentes, mediaqueries, y estilos luego de haber vinculado SASS */
 
 /* si pueden encontrarme el error sería de gran ayuda, porque he intentado de todo y no he podido, incluso hablé con profesores de coder ask. GRACIASS! */
+
+/* estuve viendo el problema con un profesor y me solucionó parcialmente el problema, es decir, me cambia los estilos para vista desktop, pero cuando modifico algo en el partial de mediaqueries no funciona nada, por lo tanto sigo sin poder hacerla responsive (antes de sass tenia bien el responsive) */
