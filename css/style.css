@@ -39,6 +39,7 @@ footer {
   grid-template-columns: 4;
   grid-template-rows: 4;
   grid-template-areas: "header header header header" "seccionUno seccionUno seccionUno seccionUno" "seccionDos seccionDos seccionDos seccionDos" "footer footer footer footer";
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -51,139 +52,658 @@ body {
   background-size: cover;
 }
 
+/* css para index.html */
+@media (min-width: 993px) {
+  main {
+    text-align: center;
+  }
+  main .parrafo {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0% 7% 0%;
+    font-size: 3.125em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .div1Flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  main .div1Flex .parrafito {
+    margin-bottom: 3.125em;
+    margin-right: 3.125em;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .div1Flex .img1 {
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    width: 16.875em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .div1Flex .img1:hover {
+    transform: rotate(360deg) scale(2);
+  }
+  main .seccionDos {
+    margin-bottom: 6.25em;
+  }
+  main .seccionDos .hito {
+    margin: 14% 0% 10% 0%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .seccionDos .div2Flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .seccionDos .div2Flex .parrafitoSegundaSeccion {
+    margin-bottom: 3.125em;
+    margin-left: 3.125em;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .seccionDos .div2Flex .img2 {
+    margin-right: 9.375em;
+    margin-left: 9.375em;
+    width: 18.75em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .seccionDos .div2Flex .img2:hover {
+    transform: rotate(360deg) scale(2);
+  }
+}
 /* Vista Desktops */
 @media (max-width: 992px) and (min-width: 800px) {
   body {
     font-size: 1em;
     overflow-x: hidden;
   }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contenedor header .div1 {
+    height: 100%;
+  }
+  .contenedor header .div1 .logoyh1 .logo {
+    margin-top: 0.625em;
+    height: 4em;
+  }
+  .contenedor header .div1 .logoyh1 h1 {
+    font-size: 1.4em;
+  }
+  .contenedor header .div1 .subt {
+    font-size: 1em;
+  }
+  main {
+    text-align: center;
+  }
+  main .parrafo {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0% 7% 0%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .div1Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .div1Flex .parrafito {
+    margin-bottom: 3.125em;
+    margin-right: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .div1Flex .img1 {
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    width: 20em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .div1Flex .img1:hover {
+    transform: none;
+  }
+  main .seccionDos {
+    margin-bottom: 6.25em;
+  }
+  main .seccionDos .hito {
+    margin: 14% 0% 10% 0%;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .seccionDos .div2Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .seccionDos .div2Flex .parrafitoSegundaSeccion {
+    margin-bottom: 3.125em;
+    margin-left: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .seccionDos .div2Flex .img2 {
+    margin-right: 9.375em;
+    margin-left: 9.375em;
+    width: 24em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .seccionDos .div2Flex .img2:hover {
+    transform: none;
+  }
+  .sectionInsti .tituloFutbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 2.5em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInsti .futbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  .sectionInsti .carousel-fade {
+    width: 70%;
+    margin-left: 9em;
+  }
+  .sectionInstiDos .tituloBasquetbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 2.5em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .basquetbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  .sectionInstiDos .carousel-fade2 {
+    width: 70%;
+    margin-left: 9em;
+  }
+  .gridMain {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  .gridMain .divF {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .gridMain .divF .clasificados {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .gridMain .divF .versus {
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: rgba(139, 139, 124, 0.61);
+    border-bottom: solid rgb(1, 68, 1) 1.5px;
+    border-top: solid rgb(1, 68, 1) 1.5px;
+  }
+  .gridMain .divF .raVsAr {
+    font-size: 30px;
+    color: rgb(3, 61, 3);
+    background-color: rgba(76, 76, 71, 0.61);
+    border-bottom: solid black 1px;
+    border-top: solid black 0.5px;
+  }
+  .tablaF {
+    display: grid;
+  }
+  .parrafoF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .parrafoF table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoF thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoF .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoF th, .parrafoF td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2F {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-left: 50px;
+  }
+  .parrafoF {
+    margin-left: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .tablaB {
+    display: grid;
+    justify-content: end;
+  }
+  .parrafoB {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .parrafoB table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoB thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoB .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoB th, .parrafoB td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2B {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 50px;
+  }
+  .mainG {
+    display: grid;
+    justify-content: center;
+  }
+  .mainG .divC {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .mainG .divC .bxsh {
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG .divC .pC {
+    font-weight: bolder;
+    background-color: rgba(16, 77, 19, 0.61);
+  }
+  .mainG .divC .icoP {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .mainG form fieldset {
+    border: none;
+  }
+  .mainG form fieldset .lineaFormulario {
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+  }
+  .mainG form fieldset .lineaFormulario label {
+    background-color: rgba(255, 255, 255, 0.37);
+    float: left;
+    width: 5.75em;
+    font-size: 1.35em;
+    font-weight: bolder;
+  }
+  .mainG form fieldset .lineaFormulario input {
+    padding: 0.3125em;
+  }
+  .mainG form fieldset .lineaFormulario textarea {
+    padding: 0.9375em;
+  }
+  .mainG form fieldset .lineaFormulario .botones {
+    margin-right: 0em;
+  }
 }
 /* Vista Tablets */
 @media (max-width: 800px) and (min-width: 600px) {
-  .carousel-fade {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  .carousel-fade2 {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  header {
-    height: 100%;
+  body {
+    background-image: none;
   }
   .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  body {
-    width: 100%;
-    background: none;
-    background-repeat: none;
-    background-size: none;
-    background-position: none;
-    overflow-x: hidden;
-    background-color: azure;
+  .contenedor header .div1 {
+    height: 100%;
   }
-  .parrafito {
-    margin-right: 0em;
-    font-style: none;
-  }
-  .parrafitoSegundaSeccion {
-    margin-left: 0em;
-    font-style: none;
-  }
-  .tituloBasquetbol {
-    margin-top: 2.25em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 1.5em;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-  }
-  .tituloFutbol {
-    margin-top: 2.375em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 1.5rem;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-  }
-  .logo {
+  .contenedor header .div1 .logoyh1 .logo {
     margin-top: 0.625em;
-    height: 4.25em;
+    height: 4em;
   }
-  h1 {
-    font-size: 0.8em;
+  .contenedor header .div1 .logoyh1 h1 {
+    font-size: 1.4em;
   }
-  .div1Flex {
+  .contenedor header .div1 .subt {
+    font-size: 1em;
+  }
+  main {
+    text-align: center;
+  }
+  main .parrafo {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-  }
-  .div2Flex {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .img1:hover {
-    transform: none;
-  }
-  .img2:hover {
-    transform: none;
-  }
-  .iconoDiv {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-  }
-  .hito {
-    margin: 7% 0% 2% 0%;
-    font-size: 1.9em;
-  }
-  .clasificados {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 1.6em;
+    margin: 3% 0% 7% 0%;
+    font-size: 2.5em;
     font-weight: bold;
     color: rgb(4, 53, 14);
     box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .div1Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .div1Flex .parrafito {
+    margin-bottom: 3.125em;
+    margin-right: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .div1Flex .img1 {
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    width: 16.875em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .div1Flex .img1:hover {
+    transform: none;
+  }
+  main .seccionDos {
+    margin-bottom: 6.25em;
+  }
+  main .seccionDos .hito {
+    margin: 14% 0% 10% 0%;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .seccionDos .div2Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .seccionDos .div2Flex .parrafitoSegundaSeccion {
+    margin-bottom: 3.125em;
+    margin-left: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: oblique;
+  }
+  main .seccionDos .div2Flex .img2 {
+    margin-right: 9.375em;
+    margin-left: 9.375em;
+    width: 18.75em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .seccionDos .div2Flex .img2:hover {
+    transform: none;
+  }
+  .sectionInsti .tituloFutbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInsti .futbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .sectionInsti .carousel-fade {
+    width: 70%;
+    margin-left: 7em;
+  }
+  .sectionInstiDos .tituloBasquetbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .basquetbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .sectionInstiDos .carousel-fade2 {
+    width: 70%;
+    margin-left: 7em;
+  }
+  .gridMain {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  .gridMain .divF {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .gridMain .divF .clasificados {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .gridMain .divF .versus {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .gridMain .divF .raVsAr {
+    font-size: 30px;
+    color: darkgreen;
+  }
+  .tablaF {
+    display: grid;
+  }
+  .parrafoF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .parrafoF table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoF thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoF .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoF th, .parrafoF td {
+    padding: 5px;
+    text-align: center;
   }
   .h2F {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
+    margin-left: 50px;
+  }
+  .parrafoF {
     margin-left: 30px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .tablaB {
+    display: grid;
+    justify-content: end;
+  }
+  .parrafoB {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .parrafoB table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoB thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoB .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoB th, .parrafoB td {
+    padding: 5px;
+    text-align: center;
   }
   .h2B {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-right: 20px;
+    margin-right: 50px;
+  }
+  .mainG {
+    display: grid;
+    justify-content: center;
+  }
+  .mainG .divC {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .mainG .divC .bxsh {
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG .divC .pC {
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(16, 77, 19, 0.61);
+  }
+  .mainG .divC .icoP {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .mainG form fieldset {
+    border: none;
+  }
+  .mainG form fieldset .lineaFormulario {
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+  }
+  .mainG form fieldset .lineaFormulario label {
+    background-color: none;
+    float: left;
+    width: 5.75em;
+    font-size: 1.35em;
+    font-weight: bolder;
+  }
+  .mainG form fieldset .lineaFormulario input {
+    padding: 0.3125em;
+  }
+  .mainG form fieldset .lineaFormulario textarea {
+    padding: 0.9375em;
+  }
+  .mainG form fieldset .lineaFormulario .botones {
+    margin-right: 0em;
+  }
+  .iconoDiv {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
   }
 }
 /* Vista Mobile */
 @media (max-width: 600px) and (min-width: 350px) {
-  header {
-    height: 100%;
-  }
-  .carousel-fade {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  .carousel-fade2 {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
   body {
     width: 100%;
     background: none;
@@ -193,167 +713,296 @@ body {
     overflow-x: hidden;
     background-color: azure;
   }
-  .div1Flex {
+  .contenedor {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .div2Flex {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  ul {
-    font-size: 0.9em;
-  }
-  .logo {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    height: 3.75em;
-  }
-  h1 {
-    margin-bottom: 1.2em;
-    font-size: 1em;
-    border: none;
-  }
-  .subt {
-    margin-right: 1.5em;
-    margin-top: 1em;
-    font-size: 0.9em;
-  }
-  body {
-    font-size: 16px;
-  }
-  .parrafo {
-    margin: 7% 0% 5% 0%;
-    font-size: 2em;
-  }
-  .parrafito {
-    text-align: center;
-    margin-right: 0em;
-    margin-bottom: 1em;
-  }
-  .img1:hover {
-    transform: none;
-  }
-  .seccionDos {
-    margin-bottom: 2.25em;
-  }
-  .hito {
-    margin: 30% 0% 5% 0%;
-    font-size: 1.5em;
-  }
-  .parrafitoSegundaSeccion {
-    text-align: center;
-    margin-left: 0em;
-    margin-bottom: 0.5em;
-  }
-  .img2:hover {
-    transform: none;
-  }
-  .tituloBasquetbol {
-    margin-top: 1em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 1.5em;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-  }
-  .basquetbolParrafo {
-    margin-top: 1.7em;
-    font-size: 1em;
-  }
-  .tituloFutbol {
-    margin-top: 1em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 1.5rem;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-  }
-  .futbolParrafo {
-    margin-top: 1.7em;
-    font-size: 1em;
-  }
-  .footerParrafo {
-    font-size: 0.9em;
-  }
-  .iconoDiv {
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
+    justify-content: space-around;
+  }
+  .contenedor header .div1 {
+    height: 100%;
+  }
+  .contenedor header .div1 .logoyh1 .logo {
+    margin-top: 0.625em;
+    height: 3.3em;
+  }
+  .contenedor header .div1 .logoyh1 h1 {
+    font-size: 0.9em;
+  }
+  .contenedor header .div1 .subt {
+    font-size: 8px;
+  }
+  main {
+    text-align: center;
+  }
+  main .parrafo {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0% 7% 0%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .div1Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .div1Flex .parrafito {
+    margin-bottom: 3.125em;
+    margin-right: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: oblique;
+  }
+  main .div1Flex .img1 {
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    width: 16.875em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .div1Flex .img1:hover {
+    transform: none;
+  }
+  main .seccionDos {
+    margin-bottom: 6.25em;
+  }
+  main .seccionDos .hito {
+    margin: 14% 0% 10% 0%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .seccionDos .div2Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .seccionDos .div2Flex .parrafitoSegundaSeccion {
+    margin-bottom: 3.125em;
+    margin-left: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: oblique;
+  }
+  main .seccionDos .div2Flex .img2 {
+    margin-right: 9.375em;
+    margin-left: 9.375em;
+    width: 18.75em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .seccionDos .div2Flex .img2:hover {
+    transform: none;
+  }
+  .sectionInsti .tituloFutbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 1.8em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInsti .futbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .sectionInsti .carousel-fade {
+    width: 80%;
+    margin-left: 2.5em;
+  }
+  .sectionInstiDos .tituloBasquetbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 1.8em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .basquetbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  .sectionInstiDos .carousel-fade2 {
+    width: 80%;
+    margin-left: 2.5em;
+    margin-bottom: 2em;
+  }
+  .gridMain {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  .gridMain .divF {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .gridMain .divF .clasificados {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .gridMain .divF .versus {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .gridMain .divF .raVsAr {
+    font-size: 30px;
+    color: darkgreen;
   }
   .tablaF {
     display: grid;
-    justify-content: center;
   }
   .parrafoF {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    align-items: center;
   }
-  .clasificados {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  .parrafoF table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoF thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoF .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoF th, .parrafoF td {
+    padding: 5px;
+    text-align: center;
   }
   .h2F {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-left: 55px;
+    margin-left: 0px;
+    border-bottom: solid;
+    border-radius: 10%;
   }
-  .h2B {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    margin-right: 0px;
-    margin-top: 20px;
+  .parrafoF {
+    margin-left: 0px;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .tablaB {
+    display: grid;
+    justify-content: center;
   }
   .parrafoB {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 50px;
+    align-items: center;
+    margin-right: 0px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .parrafoB table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoB thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoB .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoB th, .parrafoB td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2B {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 0px;
   }
   tr, th, td {
     padding: 10px;
   }
+  .mainG {
+    display: grid;
+    justify-content: center;
+  }
+  .mainG .divC {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .mainG .divC .bxsh {
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG .divC .pC {
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(16, 77, 19, 0.61);
+  }
+  .mainG .divC .icoP {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .mainG form fieldset {
+    border: none;
+  }
+  .mainG form fieldset .lineaFormulario {
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+  }
+  .mainG form fieldset .lineaFormulario label {
+    background-color: none;
+    float: left;
+    width: 5.75em;
+    font-size: 1.35em;
+    font-weight: bolder;
+  }
+  .mainG form fieldset .lineaFormulario input {
+    padding: 0.3125em;
+  }
+  .mainG form fieldset .lineaFormulario textarea {
+    padding: 0.9375em;
+  }
+  .mainG form fieldset .lineaFormulario .botones {
+    margin-right: 0em;
+  }
+  .iconoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 /* Vista Mobile */
 @media (max-width: 350px) and (min-width: 0px) {
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  header {
-    padding: 0.3125rem;
-  }
-  .carousel-fade {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  .carousel-fade2 {
-    width: 100%;
-    margin-left: 0rem;
-  }
-  h1 {
-    font-size: 0.8em;
-    font-weight: none;
-  }
-  .subt {
-    margin-right: 0em;
-  }
   body {
     width: 100%;
     background: none;
@@ -364,138 +1013,289 @@ body {
     background-color: azure;
     font-size: 16px;
   }
-  .img1:hover {
-    transform: none;
-  }
-  .img2:hover {
-    transform: none;
-  }
-  .div1Flex {
+  .contenedor {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  .div2Flex {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  .contenedor header .div1 {
+    height: 100%;
   }
-  ul {
-    font-size: 0.6em;
-    justify-content: space-evenly;
+  .contenedor header .div1 .logoyh1 .logo {
+    margin-top: 0.625em;
+    height: 3.3em;
   }
-  .logo {
-    margin-top: 0.5em;
-    height: 5em;
+  .contenedor header .div1 .logoyh1 h1 {
+    font-size: 0.7em;
   }
-  h1 {
-    border-radius: none;
-    border: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: rgb(0, 2, 1);
-    font-style: oblique;
-    font-size: 0.9em;
+  .contenedor header .div1 .subt {
+    font-size: 8px;
   }
-  .subt {
-    font-size: 0.6em;
-    margin-right: 1em;
-  }
-  .parrafo {
-    margin: 7% 0% 2% 0%;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  .parrafito {
-    margin-bottom: 2.125em;
-    margin-right: 1em;
-    margin-left: 1em;
-    font-size: 1em;
-    font-weight: bold;
-  }
-  .hito {
-    margin: 7% 0% 2% 0%;
-    font-size: 1.3em;
-  }
-  .parrafitoSegundaSeccion {
-    margin-bottom: 2.125em;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1em;
-  }
-  .tituloBasquetbol {
-    margin-top: 1em;
+  main {
     text-align: center;
+  }
+  main .parrafo {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0% 7% 0%;
+    font-size: 2.2em;
+    font-weight: bold;
     color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  main .div1Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .div1Flex .parrafito {
+    margin-bottom: 3.125em;
+    margin-right: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: oblique;
+  }
+  main .div1Flex .img1 {
+    margin-left: 9.375em;
+    margin-right: 9.375em;
+    width: 16.875em;
+    border: solid 2px;
+    border-radius: 1.1em;
+    transition: all 3s;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .div1Flex .img1:hover {
+    transform: none;
+  }
+  main .seccionDos {
+    margin-bottom: 6.25em;
+  }
+  main .seccionDos .hito {
+    margin: 14% 0% 10% 0%;
     font-size: 1.5em;
     font-weight: bold;
+    color: rgb(4, 53, 14);
     box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
   }
-  .basquetbolParrafo {
-    margin-top: 1.7em;
-    font-size: 1em;
+  main .seccionDos .div2Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .tituloFutbol {
+  main .seccionDos .div2Flex .parrafitoSegundaSeccion {
+    margin-bottom: 3.125em;
+    margin-left: none;
+    color: rgb(0, 2, 1);
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: oblique;
+  }
+  main .seccionDos .div2Flex .img2 {
+    margin-right: 9.375em;
+    margin-left: 9.375em;
+    width: 18.75em;
+    border: solid 2px;
+    border-radius: 1.25em;
+    transition: all 3s;
+    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
+  }
+  main .seccionDos .div2Flex .img2:hover {
+    transform: none;
+  }
+  .sectionInsti .tituloFutbol {
     margin-top: 1em;
     text-align: center;
     color: rgb(4, 53, 14);
-    font-size: 1.5rem;
+    font-size: 1.6em;
     font-weight: bold;
     box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
   }
-  .futbolParrafo {
+  .sectionInsti .futbolParrafo {
     margin-top: 1.7em;
     font-size: 1em;
+    font-weight: bolder;
   }
-  .footerParrafo {
-    font-size: 16px;
+  .sectionInsti .carousel-fade {
+    width: 80%;
+    margin-left: 2.5em;
   }
-  .iconoDiv {
+  .sectionInstiDos .tituloBasquetbol {
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 1.6em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .basquetbolParrafo {
+    margin-top: 1.7em;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+  .sectionInstiDos .carousel-fade2 {
+    width: 80%;
+    margin-left: 2.5em;
+  }
+  .gridMain {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  .gridMain .divF {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
+    margin-top: 50px;
+  }
+  .gridMain .divF .clasificados {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .gridMain .divF .versus {
+    font-weight: bolder;
+    font-size: 1.2em;
+  }
+  .gridMain .divF .raVsAr {
+    font-size: 1.5em;
+    color: darkgreen;
+  }
+  .tablaF {
+    display: grid;
   }
   .parrafoF {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    align-items: center;
   }
-  th, td {
-    padding: 4px;
+  .parrafoF table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoF thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoF .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoF th, .parrafoF td {
+    padding: 5px;
     text-align: center;
   }
-  .clasificados {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-  }
   .h2F {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    margin-left: 55px;
-  }
-  .h2B {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
     margin-left: 0px;
-    margin-top: 10px;
+    border-bottom: solid;
+    border-radius: 10%;
+  }
+  .parrafoF {
+    margin-left: 0px;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .tablaB {
+    display: grid;
+    justify-content: center;
   }
   .parrafoB {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 0px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .parrafoB table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoB thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoB .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoB th, .parrafoB td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2B {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 0px;
+  }
+  .mainG {
+    display: grid;
+    justify-content: center;
+  }
+  .mainG .divC {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .mainG .divC .bxsh {
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG .divC .pC {
+    font-weight: bolder;
+    color: black;
+    background-color: rgba(16, 77, 19, 0.61);
+  }
+  .mainG .divC .icoP {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG form {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
-    margin-left: 10px;
+    margin-bottom: 50px;
+    font-size: 0.9em;
+  }
+  .mainG form fieldset {
+    border: none;
+  }
+  .mainG form fieldset .lineaFormulario {
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+  }
+  .mainG form fieldset .lineaFormulario label {
+    background-color: none;
+    float: left;
+    width: 5.75em;
+    font-size: 1.35em;
+    font-weight: bolder;
+  }
+  .mainG form fieldset .lineaFormulario input {
+    padding: 0.3125em;
+  }
+  .mainG form fieldset .lineaFormulario textarea {
+    padding: 0.9375em;
+  }
+  .mainG form fieldset .lineaFormulario .botones {
+    margin-right: 0em;
+  }
+  .iconoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 /* css para header */
@@ -551,269 +1351,218 @@ header .div1 .logoyh1 .logo {
   height: 6.25em;
 }
 
-/* css para index.html */
-main {
-  text-align: center;
-}
-main .parrafo {
-  display: flex;
-  justify-content: center;
-  margin: 3% 0% 7% 0%;
-  font-size: 3.125em;
-  font-weight: bold;
-  color: rgb(4, 53, 14);
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-main .div1Flex {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-main .div1Flex .parrafito {
-  margin-bottom: 3.125em;
-  margin-right: 3.125em;
-  color: rgb(0, 2, 1);
-  font-weight: bold;
-  font-size: 1.25em;
-  font-style: oblique;
-}
-main .div1Flex .img1 {
-  margin-left: 9.375em;
-  margin-right: 9.375em;
-  width: 16.875em;
-  border: solid 2px;
-  border-radius: 1.25em;
-  transition: all 3s;
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
-}
-main .div1Flex .img1:hover {
-  transform: rotate(360deg) scale(2);
-}
-main .seccionDos {
-  margin-bottom: 6.25em;
-}
-main .seccionDos .hito {
-  margin: 14% 0% 10% 0%;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: rgb(4, 53, 14);
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-main .seccionDos .div2Flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-main .seccionDos .div2Flex .parrafitoSegundaSeccion {
-  margin-bottom: 3.125em;
-  margin-left: 3.125em;
-  color: rgb(0, 2, 1);
-  font-weight: bold;
-  font-size: 1.25em;
-  font-style: oblique;
-}
-main .seccionDos .div2Flex .img2 {
-  margin-right: 9.375em;
-  margin-left: 9.375em;
-  width: 18.75em;
-  border: solid 2px;
-  border-radius: 1.25em;
-  transition: all 3s;
-  box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.5);
-}
-main .seccionDos .div2Flex .img2:hover {
-  transform: rotate(360deg) scale(2);
-}
-
 /* css para institucion.html */
-.tituloFutbol {
-  margin-top: 1.375em;
-  text-align: center;
-  color: rgb(4, 53, 14);
-  font-size: 3rem;
-  font-weight: bold;
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+@media (min-width: 993px) {
+  .tituloFutbol {
+    margin-top: 1.375em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 3rem;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .futbolParrafo {
+    margin-top: 3.125em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .carousel-fade {
+    margin-left: 320px;
+    width: 50%;
+  }
+  .tituloBasquetbol {
+    margin-top: 3.25em;
+    text-align: center;
+    color: rgb(4, 53, 14);
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .basquetbolParrafo {
+    margin-top: 3.125em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
+  .carousel-fade2 {
+    margin-left: 320px;
+    width: 50%;
+    margin-bottom: 70px;
+  }
 }
-
-.futbolParrafo {
-  margin-top: 3.125em;
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.carousel-fade {
-  margin-left: 300px;
-  width: 50%;
-}
-
-.tituloBasquetbol {
-  margin-top: 3.25em;
-  text-align: center;
-  color: rgb(4, 53, 14);
-  font-size: 3em;
-  font-weight: bold;
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-
-.basquetbolParrafo {
-  margin-top: 3.125em;
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.carousel-fade2 {
-  margin-left: 300px;
-  width: 50%;
-  margin-bottom: 70px;
-}
-
 /* css para futbol.html */
-.gridMain {
-  display: grid;
-  grid-template-columns: 4fr;
+@media (min-width: 993px) {
+  .gridMain {
+    display: grid;
+    grid-template-columns: 4fr;
+  }
+  .gridMain .divF {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .gridMain .divF .clasificados {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .gridMain .divF .versus {
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: rgba(139, 139, 124, 0.61);
+    border-bottom: solid rgb(1, 68, 1) 1.5px;
+    border-top: solid rgb(1, 68, 1) 1.5px;
+  }
+  .gridMain .divF .raVsAr {
+    font-size: 30px;
+    color: rgb(3, 61, 3);
+    background-color: rgba(76, 76, 71, 0.61);
+    border-bottom: solid black 1px;
+    border-top: solid black 0.5px;
+  }
+  .tablaF {
+    display: grid;
+  }
+  .parrafoF {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .parrafoF table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoF thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoF .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoF th, .parrafoF td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2F {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-left: 150px;
+    border-bottom: solid;
+    border-radius: 10%;
+  }
+  .parrafoF {
+    margin-left: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+  }
 }
-.gridMain .divF {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-.gridMain .divF .clasificados {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(4, 53, 14);
-  box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-.gridMain .divF .versus {
-  font-weight: bolder;
-  font-size: 20px;
-}
-.gridMain .divF .raVsAr {
-  font-size: 30px;
-  color: darkgreen;
-}
-
-.tablaF {
-  display: grid;
-}
-
-.parrafoF {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.parrafoF table {
-  width: 30%;
-  border: solid 2px;
-  margin-bottom: 5em;
-  margin-top: 5em;
-  background-color: rgb(246, 248, 250);
-}
-.parrafoF thead {
-  background-color: green;
-  border-bottom: solid 2px black;
-  color: white;
-}
-.parrafoF .racingPos {
-  background-color: rgb(165, 165, 165);
-}
-.parrafoF th, .parrafoF td {
-  padding: 5px;
-  text-align: center;
-}
-
-.h2F {
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(4, 53, 14);
-  margin-left: 150px;
-}
-
-.parrafoF {
-  margin-left: 50px;
-  text-align: center;
-  font-weight: bolder;
-}
-
 /* css para basquetbol.html */
-.tablaB {
-  display: grid;
+@media (min-width: 993px) {
+  .tablaB {
+    display: grid;
+    justify-content: end;
+  }
+  .parrafoB {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .parrafoB table {
+    width: 30%;
+    border: solid 2px;
+    margin-bottom: 5em;
+    margin-top: 5em;
+    background-color: rgb(246, 248, 250);
+  }
+  .parrafoB thead {
+    background-color: green;
+    border-bottom: solid 2px black;
+    color: white;
+  }
+  .parrafoB .racingPos {
+    background-color: rgb(165, 165, 165);
+  }
+  .parrafoB th, .parrafoB td {
+    padding: 5px;
+    text-align: center;
+  }
+  .h2B {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-right: 150px;
+  }
 }
-
-.parrafoB {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-.parrafoB {
-  margin-right: 50px;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.h2B {
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(4, 53, 14);
-  margin-right: 150px;
-}
-
 /* css para contacto.html */
-.mainG {
-  display: grid;
-  justify-content: center;
+@media (min-width: 993px) {
+  .mainG {
+    display: grid;
+    justify-content: center;
+  }
+  .mainG .divC {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: black;
+  }
+  .mainG .divC .bxsh {
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG .divC .pC {
+    font-weight: bolder;
+    background-color: rgba(16, 77, 19, 0.61);
+  }
+  .mainG .divC .icoP {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+  }
+  .mainG form {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+  .mainG form fieldset {
+    border: none;
+  }
+  .mainG form fieldset .lineaFormulario {
+    margin-bottom: 1.875em;
+    margin-left: 1.875em;
+  }
+  .mainG form fieldset .lineaFormulario label {
+    background-color: rgba(255, 255, 255, 0.37);
+    float: left;
+    width: 5.75em;
+    font-size: 1.35em;
+    font-weight: bolder;
+  }
+  .mainG form fieldset .lineaFormulario input {
+    padding: 0.3125em;
+  }
+  .mainG form fieldset .lineaFormulario textarea {
+    padding: 0.9375em;
+  }
+  .mainG form fieldset .lineaFormulario .botones {
+    margin-right: 0em;
+  }
 }
-.mainG .divC {
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.mainG .divC .bxsh {
-  box-shadow: 0.2em -0.2em 1em 0.3em rgba(0, 0, 0, 0.3);
-}
-.mainG .divC .pC {
-  font-weight: bolder;
-  background-color: rgba(139, 139, 124, 0.61);
-}
-.mainG .divC .icoP {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0.2em -0.2em 1em 0.3em rgba(0, 0, 0, 0.3);
-}
-.mainG form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-bottom: 50px;
-}
-.mainG form fieldset {
-  border: none;
-}
-.mainG form fieldset .lineaFormulario {
-  margin-bottom: 1.875em;
-  margin-left: 1.875em;
-}
-.mainG form fieldset .lineaFormulario label {
-  background-color: rgba(255, 255, 255, 0.37);
-  float: left;
-  width: 5.75em;
-  font-size: 1.35em;
-  font-weight: bolder;
-}
-.mainG form fieldset .lineaFormulario input {
-  padding: 0.3125em;
-}
-.mainG form fieldset .lineaFormulario textarea {
-  padding: 0.9375em;
-}
-.mainG form fieldset .lineaFormulario .botones {
-  margin-right: 0em;
-}
-
 /* css para footer */
 footer {
   border-radius: 0.33em;
@@ -840,6 +1589,4 @@ footer .iconoDiv {
 
 /* no me toma los cambios en el sitio web, pero si en el archivo style.css, es decir, no me permite modificar fuentes, mediaqueries, y estilos luego de haber vinculado SASS */
 /* si pueden encontrarme el error sería de gran ayuda, porque he intentado de todo y no he podido, incluso hablé con profesores de coder ask. GRACIASS! */
-/* estuve viendo el problema con un profesor y me solucionó parcialmente el problema, es decir, me cambia los estilos para vista desktop, pero cuando modifico algo en el partial de mediaqueries no funciona nada, por lo tanto sigo sin poder hacerla responsive (antes de sass tenia bien el responsive) */
-
-/*# sourceMappingURL=style.css.map */
+/* estuve viendo el problema con un profesor y me solucionó parcialmente el problema, es decir, me cambia los estilos para vista desktop, pero cuando modifico algo en el partial de mediaqueries no funciona nada, por lo tanto sigo sin poder hacerla responsive (antes de sass tenia bien el responsive) *//*# sourceMappingURL=style.css.map */

@@ -1,9 +1,309 @@
 /* Vista Desktops */
 
 @media (max-width: 992px) and (min-width: 800px) {
+
     body{
         font-size: 1em;
         overflow-x: hidden;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        header{
+            .div1{
+                height: 100%;
+                .logoyh1{
+                    .logo{
+                        margin-top: 0.625em;
+                        height: 4em;
+                    }
+                    h1{
+                        font-size: 1.4em;
+                    }
+                }
+                .subt{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    main{
+        text-align: center;
+        .parrafo {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 7% 0%;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .div1Flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .parrafito{
+                margin-bottom: 3.125em;
+                margin-right: none;
+                color: rgb(0, 2, 1);
+                font-weight: bold;
+                font-size: 1.25em;
+                font-style: oblique;
+            }
+            .img1{
+                margin-left: 9.375em;
+                margin-right: 9.375em;
+                width: 20em;
+                border: solid 2px;
+                border-radius: 1.25em;
+                transition: all 3s;
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+            }
+            .img1:hover{
+                transform: none;
+            }
+        }
+        .seccionDos{
+            margin-bottom: 6.25em;
+            .hito {
+                margin: 14% 0% 10% 0%;
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+            }
+            .div2Flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .parrafitoSegundaSeccion{
+                    margin-bottom: 3.125em;
+                    margin-left: none;
+                    color: rgb(0, 2, 1);
+                    font-weight: bold;
+                    font-size: 1.25em;
+                    font-style: oblique;
+                }
+                .img2{
+                    margin-right: 9.375em;
+                    margin-left: 9.375em;
+                    width: 24em;
+                    border: solid 2px;
+                    border-radius: 1.25em;
+                    transition: all 3s;
+                    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                }
+                .img2:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .sectionInsti{
+        .tituloFutbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .futbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.4em;
+            font-weight: bolder;
+        }
+        .carousel-fade{
+            width: 70%;
+            margin-left: 9em;
+        }
+    }
+
+    .sectionInstiDos{
+        .tituloBasquetbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .basquetbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.4em;
+            font-weight: bolder;
+        }
+        .carousel-fade2{
+            width: 70%;
+            margin-left: 9em;
+        }
+    }
+
+    .gridMain{
+        display: grid;
+        grid-template-columns: 4fr;
+        .divF{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            .clasificados{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+            }
+            .versus {
+                font-weight: bolder;
+                font-size: 20px;
+                color: black;
+                background-color: rgba(139, 139, 124, 0.61);
+                border-bottom: solid rgb(1, 68, 1) 1.5px;
+                border-top: solid rgb(1, 68, 1) 1.5px;
+            }
+            .raVsAr {
+                font-size: 30px;
+                color: rgb(3, 61, 3);
+                background-color: rgba(76, 76, 71, 0.61);
+                border-bottom: solid black 1px;
+                border-top: solid black 0.5px;
+            }
+        }
+        }
+        .tablaF{
+            display: grid
+        }
+        .parrafoF{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            table {
+                width: 30%;
+                border: solid 2px;
+                margin-bottom: 5em;
+                margin-top: 5em;
+                background-color: rgb(246, 248, 250);
+            }
+                thead{
+                    background-color: green;
+                    border-bottom: solid 2px black;
+                    color: white;
+                }
+                .racingPos{
+                    background-color: rgb(165, 165, 165);
+                }
+                th, td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 50px;
+            }
+            .parrafoF {
+                margin-left: 30px;
+                text-align: center;
+                font-weight: bolder;
+                color: black;
+            }
+
+    .tablaB{
+        display: grid;
+        justify-content: end;
+    }
+    
+    .parrafoB{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 20px;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+        table {
+            width: 30%;
+            border: solid 2px;
+            margin-bottom: 5em;
+            margin-top: 5em;
+            background-color: rgb(246, 248, 250);
+        }
+            thead{
+                background-color: green;
+                border-bottom: solid 2px black;
+                color: white;
+            }
+            .racingPos{
+                background-color: rgb(165, 165, 165);
+            }
+            th, td{
+                padding: 5px;
+                text-align: center;
+            }
+    }
+    .h2B{
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-right: 50px;
+    }
+
+    .mainG{
+        display: grid;
+        justify-content: center;
+        .divC{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            .bxsh {
+                box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+            }
+            .pC {
+                font-weight: bolder;
+                background-color: rgba(16, 77, 19, 0.61);
+            }
+            .icoP {
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            fieldset{
+                border: none;
+                .lineaFormulario{
+                    margin-bottom: 1.875em;
+                    margin-left: 1.875em;
+                    label {
+                        background-color: rgba(255, 255, 255, 0.37);
+                        float: left;
+                        width: 5.75em;
+                        font-size: 1.35em;
+                        font-weight: bolder;
+                    }
+                    input{
+                        padding: 0.3125em;
+                    }
+                    textarea{
+                        padding: 0.9375em;
+                    }
+                    
+                    .botones{
+                        margin-right: 0em;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -12,133 +312,310 @@
 
 @media (max-width: 800px) and (min-width: 600px) {
 
-    .carousel-fade{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    .carousel-fade2{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    header{
-        height: 100%;
+    body{
+        background-image: none;
     }
 
     .contenedor{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        header{
+            .div1{
+                height: 100%;
+                .logoyh1{
+                    .logo{
+                        margin-top: 0.625em;
+                        height: 4em;
+                    }
+                    h1{
+                        font-size: 1.4em;
+                    }
+                }
+                .subt{
+                    font-size: 1em;
+                }
+            }
+        }
     }
 
-    body{
-        width: 100%;
-        background: none;
-        background-repeat: none;
-        background-size: none;
-        background-position: none;
-        overflow-x: hidden;
-        background-color: azure;
-    }
-
-
-    .parrafito{
-        margin-right: 0em;
-        font-style: none;
-    }
-
-    
-    .parrafitoSegundaSeccion{
-        margin-left: 0em;
-        font-style: none;
-    }
-
-    .tituloBasquetbol{
-        margin-top: 2.25em;
+    main{
         text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5em;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        .parrafo {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 7% 0%;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .div1Flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .parrafito{
+                margin-bottom: 3.125em;
+                margin-right: none;
+                color: rgb(0, 2, 1);
+                font-weight: bold;
+                font-size: 1.25em;
+                font-style: oblique;
+            }
+            .img1{
+                margin-left: 9.375em;
+                margin-right: 9.375em;
+                width: 16.875em;
+                border: solid 2px;
+                border-radius: 1.25em;
+                transition: all 3s;
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+            }
+            
+            .img1:hover{
+                transform: none;
+            }
+        }
+        .seccionDos{
+            margin-bottom: 6.25em;
+            .hito {
+                margin: 14% 0% 10% 0%;
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+            }
+            .div2Flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .parrafitoSegundaSeccion{
+                    margin-bottom: 3.125em;
+                    margin-left: none;
+                    color: rgb(0, 2, 1);
+                    font-weight: bold;
+                    font-size: 1.25em;
+                    font-style: oblique;
+                }
+                .img2{
+                    margin-right: 9.375em;
+                    margin-left: 9.375em;
+                    width: 18.75em;
+                    border: solid 2px;
+                    border-radius: 1.25em;
+                    transition: all 3s;
+                    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                }
+                
+                .img2:hover{
+                    transform: none;
+                }
+            }
+        }
     }
 
-    .tituloFutbol{
-        margin-top: 2.375em;
-        text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5rem;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-    
-    .logo{
-        margin-top: 0.625em;
-        height: 4.25em;
-    }
-
-    h1{
-        font-size: 0.8em;
-    }
-
-    .div1Flex{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
+    .sectionInsti{
+        .tituloFutbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .futbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        .carousel-fade{
+            width: 70%;
+            margin-left: 7em;
+        }
     }
 
-    .div2Flex{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
+    .sectionInstiDos{
+        .tituloBasquetbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .basquetbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        .carousel-fade2{
+            width: 70%;
+            margin-left: 7em;
+        }
     }
 
-    .img1:hover{
-        transform: none;
-    }
 
-    .img2:hover{
-        transform: none;
-    }
+.gridMain{
+        display: grid;
+        grid-template-columns: 4fr;
+        .divF{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            .clasificados{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                font-size: 1.7em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+            }
+            .versus {
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .raVsAr {
+                font-size: 30px;
+                color: darkgreen;
+            }
+        }
+        }
+        .tablaF{
+            display: grid
+        }
+        .parrafoF{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            table {
+                width: 30%;
+                border: solid 2px;
+                margin-bottom: 5em;
+                margin-top: 5em;
+                background-color: rgb(246, 248, 250);
+            }
+                thead{
+                    background-color: green;
+                    border-bottom: solid 2px black;
+                    color: white;
+                }
+                .racingPos{
+                    background-color: rgb(165, 165, 165);
+                }
+                th, td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 50px;
+            }
+            .parrafoF {
+                margin-left: 30px;
+                text-align: center;
+                font-weight: bolder;
+            }
+
+            .tablaB{
+                display: grid;
+                justify-content: end;
+            }
+            
+            .parrafoB{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                margin-right: 20px;
+                text-align: center;
+                font-weight: bolder;
+                color: black;
+                table {
+                    width: 30%;
+                    border: solid 2px;
+                    margin-bottom: 5em;
+                    margin-top: 5em;
+                    background-color: rgb(246, 248, 250);
+                }
+                    thead{
+                        background-color: green;
+                        border-bottom: solid 2px black;
+                        color: white;
+                    }
+                    .racingPos{
+                        background-color: rgb(165, 165, 165);
+                    }
+                    th, td{
+                        padding: 5px;
+                        text-align: center;
+                    }
+            }
+            .h2B{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-right: 50px;
+            }
+
+            .mainG{
+                display: grid;
+                justify-content: center;
+                .divC{
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                    .bxsh {
+                        box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+                    }
+                    .pC {
+                        font-weight: bolder;
+                        color: black;
+                        background-color: rgba(16, 77, 19, 0.61);
+                    }
+                    .icoP {
+                        display: flex;
+                        flex-direction: column;
+                        box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+                    }
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-bottom: 50px;
+                    fieldset{
+                        border: none;
+                        .lineaFormulario{
+                            margin-bottom: 1.875em;
+                            margin-left: 1.875em;
+                            label {
+                                background-color: none;
+                                float: left;
+                                width: 5.75em;
+                                font-size: 1.35em;
+                                font-weight: bolder;
+                            }
+                            input{
+                                padding: 0.3125em;
+                            }
+                            textarea{
+                                padding: 0.9375em;
+                            }
+                            
+                            .botones{
+                                margin-right: 0em;
+                            }
+                        }
+                    }
+                }
+            }
 
     .iconoDiv{
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-content: flex-end;
     }
-
-    .hito{
-        margin: 7% 0% 2% 0%;
-        font-size: 1.9em;
-    }
-
-    .clasificados{
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 1.6em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-
-    .h2F{
-        font-size: 1.8em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-left: 30px;
-    }
-
-    .h2B{
-        font-size: 1.8em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-right: 20px;
-    }
-
 
 }
 
@@ -146,26 +623,6 @@
 
 @media (max-width: 600px) and (min-width: 350px) {
 
-    header{
-        height: 100%;
-    }
-
-    .carousel-fade{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    .carousel-fade2{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
     body{
         width: 100%;
         background: none;
@@ -175,171 +632,313 @@
         overflow-x: hidden;
         background-color: azure;
     }
-
-    .div1Flex{
+    
+    .contenedor{
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .div2Flex{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    ul{
-        font-size: 0.90em;
-    }
-    
-    .logo{
-        margin-top: 0.5em;
-        margin-bottom: 1em;
-        height: 3.75em;
-    }
-    
-    
-    h1{
-        margin-bottom: 1.2em;
-        font-size: 1em;
-        border: none;
-    }
-    
-    .subt{
-        margin-right: 1.5em;
-        margin-top: 1em;
-        font-size: 0.9em;
-    }
-
-    body{
-        font-size: 16px;
-    }
-
-    .parrafo{
-        margin: 7% 0% 5% 0%;
-        font-size: 2em;
-    }
-
-    .parrafito{
-        text-align: center;
-        margin-right: 0em;
-        margin-bottom: 1em;
-    }
-
-
-    .img1:hover{
-        transform: none;
-    }
-
-
-    .seccionDos{
-        margin-bottom: 2.25em;
-    }
-
-    .hito{
-        margin: 30% 0% 5% 0%;
-        font-size: 1.5em;
-    }
-
-    .parrafitoSegundaSeccion{
-        text-align: center;
-        margin-left: 0em;
-        margin-bottom: 0.5em;
-    }
-
-
-    .img2:hover{
-        transform: none;
-    }
-
-    .tituloBasquetbol{
-        margin-top: 1em;
-        text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5em;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-
-    .basquetbolParrafo {
-        margin-top: 1.7em;
-        font-size: 1em;
-    }
-
-    .tituloFutbol{
-        margin-top: 1em;
-        text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5rem;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-
-    .futbolParrafo {
-        margin-top: 1.7em;
-        font-size: 1em;
-    }
-
-    .footerParrafo{
-        font-size: 0.9em;
-    }
-
-    .iconoDiv{
         flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-end;
+        justify-content: space-around;
+        header{
+            .div1{
+                height: 100%;
+                .logoyh1{
+                    .logo{
+                        margin-top: 0.625em;
+                        height: 3.3em;
+                    }
+                    h1{
+                        font-size: 0.9em;
+                    }
+                }
+                .subt{
+                    font-size: 8px;
+                }
+            }
+        }
     }
 
-    .tablaF{
+    main{
+        text-align: center;
+        .parrafo {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 7% 0%;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .div1Flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .parrafito{
+                margin-bottom: 3.125em;
+                margin-right: none;
+                color: rgb(0, 2, 1);
+                font-weight: bold;
+                font-size: 1.1em;
+                font-style: oblique;
+            }
+            .img1{
+                margin-left: 9.375em;
+                margin-right: 9.375em;
+                width: 16.875em;
+                border: solid 2px;
+                border-radius: 1.25em;
+                transition: all 3s;
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+            }
+            
+            .img1:hover{
+                transform: none;
+            }
+        }
+        .seccionDos{
+            margin-bottom: 6.25em;
+            .hito {
+                margin: 14% 0% 10% 0%;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+            }
+            .div2Flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .parrafitoSegundaSeccion{
+                    margin-bottom: 3.125em;
+                    margin-left: none;
+                    color: rgb(0, 2, 1);
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    font-style: oblique;
+                }
+                .img2{
+                    margin-right: 9.375em;
+                    margin-left: 9.375em;
+                    width: 18.75em;
+                    border: solid 2px;
+                    border-radius: 1.25em;
+                    transition: all 3s;
+                    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                }
+                
+                .img2:hover{
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .sectionInsti{
+        .tituloFutbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .futbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        .carousel-fade{
+            width: 80%;
+            margin-left: 2.5em;
+        }
+    }
+
+    .sectionInstiDos{
+        .tituloBasquetbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .basquetbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+        .carousel-fade2{
+            width: 80%;
+            margin-left: 2.5em;
+            margin-bottom: 2em;
+        }
+    }
+
+    .gridMain{
         display: grid;
-        justify-content: center;
-    }
+        grid-template-columns: 4fr;
+        .divF{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            .clasificados{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+            }
+            .versus {
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .raVsAr {
+                font-size: 30px;
+                color: darkgreen;
+            }
+        }
+        }
+        .tablaF{
+            display: grid
+        }
+        .parrafoF{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            table {
+                width: 30%;
+                border: solid 2px;
+                margin-bottom: 5em;
+                margin-top: 5em;
+                background-color: rgb(246, 248, 250);
+            }
+                thead{
+                    background-color: green;
+                    border-bottom: solid 2px black;
+                    color: white;
+                }
+                .racingPos{
+                    background-color: rgb(165, 165, 165);
+                }
+                th, td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 0px;
+                border-bottom: solid;
+                border-radius: 10%;
+            }
+            .parrafoF {
+                margin-left: 0px;
+                margin-bottom: 2em;
+                text-align: center;
+                font-weight: bolder;
+            }
 
-    .parrafoF{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 30px;
-    }
-
-    .clasificados{
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-
-    .h2F{
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-left: 55px;
-    }
-
-    .h2B{
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-
-    .parrafoB{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        margin-left: 50px;
-    }
+            .tablaB{
+                display: grid;
+                justify-content: center;
+            }
+            
+            .parrafoB{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-right: 0px;
+                text-align: center;
+                font-weight: bolder;
+                color: black;
+                table {
+                    width: 30%;
+                    border: solid 2px;
+                    margin-bottom: 5em;
+                    margin-top: 2em;
+                    background-color: rgb(246, 248, 250);
+                }
+                    thead{
+                        background-color: green;
+                        border-bottom: solid 2px black;
+                        color: white;
+                    }
+                    .racingPos{
+                        background-color: rgb(165, 165, 165);
+                    }
+                    th, td{
+                        padding: 5px;
+                        text-align: center;
+                    }
+            }
+            .h2B{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-right: 0px;
+            }
 
     tr, th, td{
         padding: 10px;
+    }
+
+    .mainG{
+        display: grid;
+        justify-content: center;
+        .divC{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            .bxsh {
+                box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+            }
+            .pC {
+                font-weight: bolder;
+                color: black;
+                background-color: rgba(16, 77, 19, 0.61);
+            }
+            .icoP {
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 50px;
+            fieldset{
+                border: none;
+                .lineaFormulario{
+                    margin-bottom: 1.875em;
+                    margin-left: 1.875em;
+                    label {
+                        background-color: none;
+                        float: left;
+                        width: 5.75em;
+                        font-size: 1.35em;
+                        font-weight: bolder;
+                    }
+                    input{
+                        padding: 0.3125em;
+                    }
+                    textarea{
+                        padding: 0.9375em;
+                    }
+                    
+                    .botones{
+                        margin-right: 0em;
+                    }
+                }
+            }
+        }
+    }
+
+    .iconoDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -347,35 +946,6 @@
 
 @media (max-width: 350px) and (min-width: 0px) {
 
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    header{
-        padding: 0.3125rem;
-    }
-
-    .carousel-fade{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    .carousel-fade2{
-        width: 100%;
-        margin-left: 0rem;
-    }
-
-    h1{
-        font-size: 0.8em;
-        font-weight: none;
-    }
-    
-    .subt{
-        margin-right: 0em;
-    }
-
     body{
         width: 100%;
         background: none;
@@ -387,163 +957,308 @@
         font-size: 16px;
     }
 
-    .img1:hover{
-        transform: none;
-    }
-
-    .img2:hover{
-        transform: none;
-    }
-
-    
-    .div1Flex{
+    .contenedor{
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        header{
+            .div1{
+                height: 100%;
+                .logoyh1{
+                    .logo{
+                        margin-top: 0.625em;
+                        height: 3.3em;
+                    }
+                    h1{
+                        font-size: 0.7em;
+                    }
+                }
+                .subt{
+                    font-size: 8px;
+                }
+            }
+        }
     }
 
-    .div2Flex{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    ul{
-        font-size: 0.6em;
-        justify-content: space-evenly
-    }
-    
-    .logo{
-        margin-top: 0.5em;
-        height: 5em;
-    }
-    
-    h1{
-        border-radius: none;
-        border: none;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: rgb(0, 2, 1);
-        font-style: oblique;
-        font-size: 0.9em;
-    }
-    
-    .subt{
-        font-size: 0.6em;
-        margin-right: 1em;
-    }
-
-
-    .parrafo{
-        margin: 7% 0% 2% 0%;
-        font-size: 2em;
-        font-weight: bold;
-    }
-
-    .parrafito{
-        margin-bottom: 2.125em;
-        margin-right: 1em;
-        margin-left: 1em;
-        font-size: 1em;
-        font-weight: bold;
-    }
-
-    .hito{
-        margin: 7% 0% 2% 0%;
-        font-size: 1.3em;
-    }
-
-
-    .parrafitoSegundaSeccion{
-        margin-bottom: 2.125em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 1em;
-    }
-
-    .tituloBasquetbol{
-        margin-top: 1em;
+    main{
         text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5em;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        .parrafo {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 7% 0%;
+            font-size: 2.2em;
+            font-weight: bold;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .div1Flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .parrafito{
+                margin-bottom: 3.125em;
+                margin-right: none;
+                color: rgb(0, 2, 1);
+                font-weight: bold;
+                font-size: 1.1em;
+                font-style: oblique;
+            }
+            .img1{
+                margin-left: 9.375em;
+                margin-right: 9.375em;
+                width: 16.875em;
+                border: solid 2px;
+                border-radius: 1.1em;
+                transition: all 3s;
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+            }
+            
+            .img1:hover{
+                transform: none;
+            }
+        }
+        .seccionDos{
+            margin-bottom: 6.25em;
+            .hito {
+                margin: 14% 0% 10% 0%;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+            }
+            .div2Flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .parrafitoSegundaSeccion{
+                    margin-bottom: 3.125em;
+                    margin-left: none;
+                    color: rgb(0, 2, 1);
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    font-style: oblique;
+                }
+                .img2{
+                    margin-right: 9.375em;
+                    margin-left: 9.375em;
+                    width: 18.75em;
+                    border: solid 2px;
+                    border-radius: 1.25em;
+                    transition: all 3s;
+                    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                }
+                
+                .img2:hover{
+                    transform: none;
+                }
+            }
+        }
     }
 
-    .basquetbolParrafo {
-        margin-top: 1.7em;
-        font-size: 1em;
+    .sectionInsti{
+        .tituloFutbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 1.6em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .futbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1em;
+            font-weight: bolder;
+        }
+        .carousel-fade{
+            width: 80%;
+            margin-left: 2.5em;
+        }
     }
 
-    .tituloFutbol{
-        margin-top: 1em;
-        text-align: center;
-        color: rgb(4, 53, 14);
-        font-size: 1.5rem;
-        font-weight: bold;
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+    .sectionInstiDos{
+        .tituloBasquetbol{
+            margin-top: 1em;
+            text-align: center;
+            color: rgb(4, 53, 14);
+            font-size: 1.6em;
+            font-weight: bold;
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+        }
+        .basquetbolParrafo {
+            margin-top: 1.7em;
+            font-size: 1em;
+            font-weight: bolder;
+        }
+        .carousel-fade2{
+            width: 80%;
+            margin-left: 2.5em;
+        }
     }
 
-    .futbolParrafo {
-        margin-top: 1.7em;
-        font-size: 1em;
-    }
+    .gridMain{
+        display: grid;
+        grid-template-columns: 4fr;
+        .divF{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            .clasificados{
+                margin-top: 10px;
+                margin-bottom: 30px;
+                font-size: 1.3em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
+            }
+            .versus {
+                font-weight: bolder;
+                font-size: 1.2em;
+            }
+            .raVsAr {
+                font-size: 1.5em;
+                color: darkgreen;
+            }
+        }
+        }
+        .tablaF{
+            display: grid
+        }
+        .parrafoF{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            table {
+                width: 30%;
+                border: solid 2px;
+                margin-bottom: 5em;
+                margin-top: 5em;
+                background-color: rgb(246, 248, 250);
+            }
+                thead{
+                    background-color: green;
+                    border-bottom: solid 2px black;
+                    color: white;
+                }
+                .racingPos{
+                    background-color: rgb(165, 165, 165);
+                }
+                th, td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 0px;
+                border-bottom: solid;
+                border-radius: 10%;
+            }
+            .parrafoF {
+                margin-left: 0px;
+                margin-bottom: 2em;
+                text-align: center;
+                font-weight: bolder;
+            }
 
-    .footerParrafo{
-        font-size: 16px;
-    }
+            .tablaB{
+                display: grid;
+                justify-content: center;
+            }
+            
+            .parrafoB{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-right: 0px;
+                text-align: center;
+                font-weight: bolder;
+                color: black;
+                table {
+                    width: 30%;
+                    border: solid 2px;
+                    margin-bottom: 5em;
+                    margin-top: 2em;
+                    background-color: rgb(246, 248, 250);
+                }
+                    thead{
+                        background-color: green;
+                        border-bottom: solid 2px black;
+                        color: white;
+                    }
+                    .racingPos{
+                        background-color: rgb(165, 165, 165);
+                    }
+                    th, td{
+                        padding: 5px;
+                        text-align: center;
+                    }
+            }
+            .h2B{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-right: 0px;
+            }
+
+            .mainG{
+                display: grid;
+                justify-content: center;
+                .divC{
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    .bxsh {
+                        box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+                    }
+                    .pC {
+                        font-weight: bolder;
+                        color: black;
+                        background-color: rgba(16, 77, 19, 0.61);
+                    }
+                    .icoP {
+                        display: flex;
+                        flex-direction: column;
+                        box-shadow: 0.2em -0.2em 1em 0.3em rgba(48, 109, 40, 0.3);
+                    }
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-bottom: 50px;
+                    font-size: 0.9em;
+                    fieldset{
+                        border: none;
+                        .lineaFormulario{
+                            margin-bottom: 1.875em;
+                            margin-left: 1.875em;
+                            label {
+                                background-color: none;
+                                float: left;
+                                width: 5.75em;
+                                font-size: 1.35em;
+                                font-weight: bolder;
+                            }
+                            input{
+                                padding: 0.3125em;
+                            }
+                            textarea{
+                                padding: 0.9375em;
+                            }
+                            
+                            .botones{
+                                margin-right: 0em;
+                            }
+                        }
+                    }
+                }
+            }
 
     .iconoDiv{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-end;
-    }
-
-    .parrafoF{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 30px;
-    }
-
-    th, td{
-        padding: 4px;
-        text-align: center;
-    }
-
-    .clasificados{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-    }
-
-    .h2F{
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-left: 55px;
-    }
-
-    .h2B{
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-
-    .parrafoB{
-        display: flex;
-        flex-direction: column-reverse;
         align-items: flex-end;
-        margin-left: 10px;
     }
+
 }

@@ -1,76 +1,81 @@
 /* css para index.html */
 
-main{
-    text-align: center;
-    .parrafo {
-        display: flex;
-        justify-content: center;
-        margin: 3% 0% 7% 0%;
-        font-size: 3.125em;
-        font-weight: bold;
-        color: rgb(4, 53, 14);
-        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-    }
-    .div1Flex{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        .parrafito{
-            margin-bottom: 3.125em;
-            margin-right: 3.125em;
-            color: rgb(0, 2, 1);
-            font-weight: bold;
-            font-size: 1.25em;
-            font-style: oblique;
-        }
-        .img1{
-            margin-left: 9.375em;
-            margin-right: 9.375em;
-            width: 16.875em;
-            border: solid 2px;
-            border-radius: 1.25em;
-            transition: all 3s;
-            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
-        }
-        
-        .img1:hover{
-            transform: rotate(360deg) scale(2);
-        }
-    }
-    .seccionDos{
-        margin-bottom: 6.25em;
-        .hito {
-            margin: 14% 0% 10% 0%;
-            font-size: 2.5em;
+@media (min-width: 993px){
+    
+    main{
+        text-align: center;
+        .parrafo {
+            display: flex;
+            justify-content: center;
+            margin: 3% 0% 7% 0%;
+            font-size: 3.125em;
             font-weight: bold;
             color: rgb(4, 53, 14);
             box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
         }
-        .div2Flex{
+        .div1Flex{
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             align-items: center;
-            .parrafitoSegundaSeccion{
+            .parrafito{
                 margin-bottom: 3.125em;
-                margin-left: 3.125em;
+                margin-right: 3.125em;
                 color: rgb(0, 2, 1);
                 font-weight: bold;
                 font-size: 1.25em;
                 font-style: oblique;
             }
-            .img2{
-                margin-right: 9.375em;
+            .img1{
                 margin-left: 9.375em;
-                width: 18.75em;
+                margin-right: 9.375em;
+                width: 16.875em;
                 border: solid 2px;
                 border-radius: 1.25em;
                 transition: all 3s;
-                box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
             }
             
-            .img2:hover{
+            .img1:hover{
                 transform: rotate(360deg) scale(2);
+            }
+        }
+        .seccionDos{
+            margin-bottom: 6.25em;
+            .hito {
+                margin: 14% 0% 10% 0%;
+                font-size: 2.5em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+            }
+            .div2Flex{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .parrafitoSegundaSeccion{
+                    margin-bottom: 3.125em;
+                    margin-left: 3.125em;
+                    color: rgb(0, 2, 1);
+                    font-weight: bold;
+                    font-size: 1.25em;
+                    font-style: oblique;
+                }
+                .img2{
+                    margin-right: 9.375em;
+                    margin-left: 9.375em;
+                    width: 18.75em;
+                    border: solid 2px;
+                    border-radius: 1.25em;
+                    transition: all 3s;
+                    box-shadow: -0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.5);
+                }
+                
+                .img2:hover{
+                    transform: rotate(360deg) scale(2);
+                }
             }
         }
     }
 }
+
+

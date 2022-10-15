@@ -1,65 +1,77 @@
 /* css para futbol.html */
 
-.gridMain{
-    display: grid;
-    grid-template-columns: 4fr;
-    .divF{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        .clasificados{
+@media (min-width: 993px){
+    .gridMain{
+        display: grid;
+        grid-template-columns: 4fr;
+        .divF{
+            display: flex;
+            flex-direction: column;
             margin-top: 50px;
-            margin-bottom: 50px;
-            font-size: 2em;
-            font-weight: bold;
-            color: rgb(4, 53, 14);
-            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
-        }
-        .versus {
-            font-weight: bolder;
-            font-size: 20px;
-        }
-        .raVsAr {
-            font-size: 30px;
-            color: darkgreen;
-        }
-    }
-    }
-    .tablaF{
-        display: grid
-    }
-    .parrafoF{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        table {
-            width: 30%;
-            border: solid 2px;
-            margin-bottom: 5em;
-            margin-top: 5em;
-            background-color: rgb(246, 248, 250);
-        }
-            thead{
-                background-color: green;
-                border-bottom: solid 2px black;
-                color: white;
+            .clasificados{
+                margin-top: 20px;
+                margin-bottom: 50px;
+                font-size: 2.3em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0,0,0,0.3);
             }
-            .racingPos{
-                background-color: rgb(165, 165, 165);
+            .versus {
+                font-weight: bolder;
+                font-size: 20px;
+                color: black;
+                background-color: rgba(139, 139, 124, 0.61);
+                border-bottom: solid rgb(1, 68, 1) 1.5px;
+                border-top: solid rgb(1, 68, 1) 1.5px;
             }
-            th, td{
-                padding: 5px;
+            .raVsAr {
+                font-size: 30px;
+                color: rgb(3, 61, 3);
+                background-color: rgba(76, 76, 71, 0.61);
+                border-bottom: solid black 1px;
+                border-top: solid black 0.5px;
+            }
+        }
+        }
+        .tablaF{
+            display: grid
+        }
+        .parrafoF{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            table {
+                width: 30%;
+                border: solid 2px;
+                margin-bottom: 5em;
+                margin-top: 5em;
+                background-color: rgb(246, 248, 250);
+            }
+                thead{
+                    background-color: green;
+                    border-bottom: solid 2px black;
+                    color: white;
+                }
+                .racingPos{
+                    background-color: rgb(165, 165, 165);
+                }
+                th, td{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 150px;
+                border-bottom: solid;
+                border-radius: 10%;
+            }
+            .parrafoF {
+                margin-left: 50px;
                 text-align: center;
+                font-weight: bolder;
+                color: black;
             }
-        }
-        .h2F{
-            font-size: 2em;
-            font-weight: bold;
-            color: rgb(4, 53, 14);
-            margin-left: 150px;
-        }
-        .parrafoF {
-            margin-left: 50px;
-            text-align: center;
-            font-weight: bolder;
-        }
+}

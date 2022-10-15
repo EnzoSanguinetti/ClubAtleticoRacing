@@ -1,23 +1,42 @@
 /* css para basquetbol.html */
 
-.tablaB{
-    display: grid
-}
-.parrafoB{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-}
-
-.parrafoB{
-    margin-right: 50px;
-    text-align: center;
-    font-weight: bolder;
-}
-.h2B{
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    margin-right: 150px;
+@media (min-width: 993px){
+    .tablaB{
+        display: grid;
+        justify-content: end;
+    }
+    
+    .parrafoB{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 50px;
+        text-align: center;
+        font-weight: bolder;
+        table {
+            width: 30%;
+            border: solid 2px;
+            margin-bottom: 5em;
+            margin-top: 5em;
+            background-color: rgb(246, 248, 250);
+        }
+            thead{
+                background-color: green;
+                border-bottom: solid 2px black;
+                color: white;
+            }
+            .racingPos{
+                background-color: rgb(165, 165, 165);
+            }
+            th, td{
+                padding: 5px;
+                text-align: center;
+            }
+    }
+    .h2B{
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(4, 53, 14);
+        margin-right: 150px;
+    }
 }

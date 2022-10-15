@@ -1,45 +1,49 @@
 /* css para institucion.html */
 
-.tituloFutbol {
-    margin-top: 1.375em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 3rem;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-
-.futbolParrafo {
-    margin-top: 3.125em;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.carousel-fade{
-    margin-left: 300px;
-    width: 50%;
-}
-
-.tituloBasquetbol {
-    margin-top: 3.25em;
-    text-align: center;
-    color: rgb(4, 53, 14);
-    font-size: 3em;
-    font-weight: bold;
-    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
-}
-
-.basquetbolParrafo {
-    margin-top: 3.125em;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bolder;
-}
-
-
-.carousel-fade2{
-    margin-left: 300px;
-    width: 50%;
-    margin-bottom: 70px;
+@media (min-width: 993px){
+    .tituloFutbol {
+        margin-top: 1.375em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 3rem;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+    }
+    
+    .futbolParrafo {
+        margin-top: 3.125em;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+    }
+    
+    .carousel-fade{
+        margin-left: 320px;
+        width: 50%;
+    }
+    
+    .tituloBasquetbol {
+        margin-top: 3.25em;
+        text-align: center;
+        color: rgb(4, 53, 14);
+        font-size: 3em;
+        font-weight: bold;
+        box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+    }
+    
+    .basquetbolParrafo {
+        margin-top: 3.125em;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        color: black;
+    }
+    
+    
+    .carousel-fade2{
+        margin-left: 320px;
+        width: 50%;
+        margin-bottom: 70px;
+    }
 }
