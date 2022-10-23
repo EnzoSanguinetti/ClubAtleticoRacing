@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 * {
@@ -39,7 +38,6 @@ footer {
   grid-template-columns: 4;
   grid-template-rows: 4;
   grid-template-areas: "header header header header" "seccionUno seccionUno seccionUno seccionUno" "seccionDos seccionDos seccionDos seccionDos" "footer footer footer footer";
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -170,7 +168,8 @@ body {
   }
   main .div1Flex .parrafito {
     margin-bottom: 3.125em;
-    margin-right: none;
+    margin-right: 2em;
+    margin-left: 2em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.25em;
@@ -205,7 +204,8 @@ body {
   }
   main .seccionDos .div2Flex .parrafitoSegundaSeccion {
     margin-bottom: 3.125em;
-    margin-left: none;
+    margin-left: 2em;
+    margin-right: 2em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.25em;
@@ -458,7 +458,8 @@ body {
   }
   main .div1Flex .parrafito {
     margin-bottom: 3.125em;
-    margin-right: none;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.25em;
@@ -493,7 +494,8 @@ body {
   }
   main .seccionDos .div2Flex .parrafitoSegundaSeccion {
     margin-bottom: 3.125em;
-    margin-left: none;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.25em;
@@ -521,6 +523,8 @@ body {
   }
   .sectionInsti .futbolParrafo {
     margin-top: 1.7em;
+    margin-left: 1em;
+    margin-right: 1em;
     font-size: 1.2em;
     font-weight: bolder;
   }
@@ -750,7 +754,8 @@ body {
   }
   main .div1Flex .parrafito {
     margin-bottom: 3.125em;
-    margin-right: none;
+    margin-right: 1em;
+    margin-left: 1em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.1em;
@@ -785,7 +790,8 @@ body {
   }
   main .seccionDos .div2Flex .parrafitoSegundaSeccion {
     margin-bottom: 3.125em;
-    margin-left: none;
+    margin-left: 1em;
+    margin-right: 1em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.1em;
@@ -813,12 +819,14 @@ body {
   }
   .sectionInsti .futbolParrafo {
     margin-top: 1.7em;
+    margin-left: 1em;
+    margin-right: 1em;
     font-size: 1.2em;
     font-weight: bolder;
   }
   .sectionInsti .carousel-fade {
     width: 80%;
-    margin-left: 2.5em;
+    margin-left: 3em;
   }
   .sectionInstiDos .tituloBasquetbol {
     margin-top: 1em;
@@ -835,7 +843,7 @@ body {
   }
   .sectionInstiDos .carousel-fade2 {
     width: 80%;
-    margin-left: 2.5em;
+    margin-left: 3em;
     margin-bottom: 2em;
   }
   .gridMain {
@@ -1050,7 +1058,8 @@ body {
   }
   main .div1Flex .parrafito {
     margin-bottom: 3.125em;
-    margin-right: none;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.1em;
@@ -1085,7 +1094,8 @@ body {
   }
   main .seccionDos .div2Flex .parrafitoSegundaSeccion {
     margin-bottom: 3.125em;
-    margin-left: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     color: rgb(0, 2, 1);
     font-weight: bold;
     font-size: 1.1em;
@@ -1113,6 +1123,8 @@ body {
   }
   .sectionInsti .futbolParrafo {
     margin-top: 1.7em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     font-size: 1em;
     font-weight: bolder;
   }
@@ -1130,6 +1142,8 @@ body {
   }
   .sectionInstiDos .basquetbolParrafo {
     margin-top: 1.7em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     font-size: 1em;
     font-weight: bolder;
   }
@@ -1587,6 +1601,4 @@ footer .iconoDiv {
   align-content: center;
 }
 
-/* no me toma los cambios en el sitio web, pero si en el archivo style.css, es decir, no me permite modificar fuentes, mediaqueries, y estilos luego de haber vinculado SASS */
-/* si pueden encontrarme el error sería de gran ayuda, porque he intentado de todo y no he podido, incluso hablé con profesores de coder ask. GRACIASS! */
-/* estuve viendo el problema con un profesor y me solucionó parcialmente el problema, es decir, me cambia los estilos para vista desktop, pero cuando modifico algo en el partial de mediaqueries no funciona nada, por lo tanto sigo sin poder hacerla responsive (antes de sass tenia bien el responsive) *//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

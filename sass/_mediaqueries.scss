@@ -47,7 +47,8 @@
             align-items: center;
             .parrafito{
                 margin-bottom: 3.125em;
-                margin-right: none;
+                margin-right: 2em;
+                margin-left: 2em;
                 color: rgb(0, 2, 1);
                 font-weight: bold;
                 font-size: 1.25em;
@@ -81,7 +82,8 @@
                 align-items: center;
                 .parrafitoSegundaSeccion{
                     margin-bottom: 3.125em;
-                    margin-left: none;
+                    margin-left: 2em;
+                    margin-right: 2em;
                     color: rgb(0, 2, 1);
                     font-weight: bold;
                     font-size: 1.25em;
@@ -356,7 +358,8 @@
             align-items: center;
             .parrafito{
                 margin-bottom: 3.125em;
-                margin-right: none;
+                margin-right: 1.5em;
+                margin-left: 1.5em;
                 color: rgb(0, 2, 1);
                 font-weight: bold;
                 font-size: 1.25em;
@@ -391,7 +394,8 @@
                 align-items: center;
                 .parrafitoSegundaSeccion{
                     margin-bottom: 3.125em;
-                    margin-left: none;
+                    margin-left: 1.5em;
+                    margin-right: 1.5em;
                     color: rgb(0, 2, 1);
                     font-weight: bold;
                     font-size: 1.25em;
@@ -425,6 +429,8 @@
         }
         .futbolParrafo {
             margin-top: 1.7em;
+            margin-left: 1em;
+            margin-right: 1em;
             font-size: 1.2em;
             font-weight: bolder;
         }
@@ -673,7 +679,8 @@
             align-items: center;
             .parrafito{
                 margin-bottom: 3.125em;
-                margin-right: none;
+                margin-right: 1em;
+                margin-left: 1em;
                 color: rgb(0, 2, 1);
                 font-weight: bold;
                 font-size: 1.1em;
@@ -708,7 +715,8 @@
                 align-items: center;
                 .parrafitoSegundaSeccion{
                     margin-bottom: 3.125em;
-                    margin-left: none;
+                    margin-left: 1em;
+                    margin-right: 1em;
                     color: rgb(0, 2, 1);
                     font-weight: bold;
                     font-size: 1.1em;
@@ -742,12 +750,14 @@
         }
         .futbolParrafo {
             margin-top: 1.7em;
+            margin-left: 1em;
+            margin-right: 1em;
             font-size: 1.2em;
             font-weight: bolder;
         }
         .carousel-fade{
             width: 80%;
-            margin-left: 2.5em;
+            margin-left: 3em;
         }
     }
 
@@ -767,7 +777,7 @@
         }
         .carousel-fade2{
             width: 80%;
-            margin-left: 2.5em;
+            margin-left: 3em;
             margin-bottom: 2em;
         }
     }
@@ -997,7 +1007,8 @@
             align-items: center;
             .parrafito{
                 margin-bottom: 3.125em;
-                margin-right: none;
+                margin-right: 0.5em;
+                margin-left: 0.5em;
                 color: rgb(0, 2, 1);
                 font-weight: bold;
                 font-size: 1.1em;
@@ -1032,7 +1043,8 @@
                 align-items: center;
                 .parrafitoSegundaSeccion{
                     margin-bottom: 3.125em;
-                    margin-left: none;
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
                     color: rgb(0, 2, 1);
                     font-weight: bold;
                     font-size: 1.1em;
@@ -1066,6 +1078,8 @@
         }
         .futbolParrafo {
             margin-top: 1.7em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
             font-size: 1em;
             font-weight: bolder;
         }
@@ -1086,6 +1100,8 @@
         }
         .basquetbolParrafo {
             margin-top: 1.7em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
             font-size: 1em;
             font-weight: bolder;
         }
