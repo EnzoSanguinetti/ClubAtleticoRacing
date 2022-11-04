@@ -322,11 +322,29 @@ body {
     color: rgb(4, 53, 14);
     margin-left: 50px;
   }
-  .parrafoF {
-    margin-left: 30px;
+  .figureF:hover .figcaptionF {
+    display: block;
+  }
+  .figureF {
+    position: relative;
+  }
+  .figureF .imgVs {
+    width: 20em;
+  }
+  .figcaptionF {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionF .parrafoF {
     text-align: center;
-    font-weight: bolder;
-    color: black;
+    padding: 2.2em;
+    font: 1em Verdana;
+    color: white;
   }
   .tablaB {
     display: grid;
@@ -579,7 +597,7 @@ body {
   }
   .parrafoF {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
   .parrafoF table {
@@ -605,12 +623,16 @@ body {
     font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-left: 50px;
+    margin-left: none;
   }
-  .parrafoF {
-    margin-left: 30px;
-    text-align: center;
-    font-weight: bolder;
+  .figureF {
+    position: relative;
+  }
+  .figureF .imgVs {
+    width: 20em;
+  }
+  .figcaptionF {
+    display: none;
   }
   .tablaB {
     display: grid;
@@ -906,11 +928,14 @@ body {
     border-bottom: solid;
     border-radius: 10%;
   }
-  .parrafoF {
-    margin-left: 0px;
-    margin-bottom: 2em;
-    text-align: center;
-    font-weight: bolder;
+  .figureF {
+    position: relative;
+  }
+  .figureF .imgVs {
+    width: 20em;
+  }
+  .figcaptionF {
+    display: none;
   }
   .tablaB {
     display: grid;
@@ -1203,13 +1228,14 @@ body {
     padding: 5px;
     text-align: center;
   }
-  .h2F {
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(4, 53, 14);
-    margin-left: 0px;
-    border-bottom: solid;
-    border-radius: 10%;
+  .figureF {
+    position: relative;
+  }
+  .figureF .imgVs {
+    width: 20em;
+  }
+  .figcaptionF {
+    display: none;
   }
   .parrafoF {
     margin-left: 0px;
@@ -1454,6 +1480,7 @@ header .div1 .logoyh1 .logo {
     border: solid 2px;
     margin-bottom: 5em;
     margin-top: 5em;
+    margin-left: 2em;
     background-color: rgb(246, 248, 250);
   }
   .parrafoF thead {
@@ -1472,15 +1499,33 @@ header .div1 .logoyh1 .logo {
     font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-left: 150px;
+    margin-left: 50px;
     border-bottom: solid;
     border-radius: 10%;
   }
-  .parrafoF {
-    margin-left: 50px;
+  .figureF:hover .figcaptionF {
+    display: block;
+  }
+  .figureF {
+    position: relative;
+  }
+  .figureF .imgVs {
+    width: 30em;
+  }
+  .figcaptionF {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionF .parrafoF {
     text-align: center;
-    font-weight: bolder;
-    color: black;
+    padding: 3.5em;
+    font: 1.2em Verdana;
+    color: white;
   }
 }
 /* css para basquetbol.html */
@@ -1520,7 +1565,7 @@ header .div1 .logoyh1 .logo {
     font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-right: 150px;
+    margin-right: 70px;
   }
 }
 /* css para contacto.html */

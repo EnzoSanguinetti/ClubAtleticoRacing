@@ -210,11 +210,29 @@
                 color: rgb(4, 53, 14);
                 margin-left: 50px;
             }
-            .parrafoF {
-                margin-left: 30px;
-                text-align: center;
-                font-weight: bolder;
-                color: black;
+            .figureF:hover .figcaptionF{
+                display: block;
+            }
+            .figureF{
+                position: relative;
+                .imgVs{
+                    width: 20em;
+                }
+            }
+                .figcaptionF{
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoF {
+                        text-align: center;
+                        padding: 2.2em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
 
     .tablaB{
@@ -491,7 +509,7 @@
         }
         .parrafoF{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             table {
                 width: 30%;
@@ -517,12 +535,16 @@
                 font-size: 2em;
                 font-weight: bold;
                 color: rgb(4, 53, 14);
-                margin-left: 50px;
+                margin-left: none;
             }
-            .parrafoF {
-                margin-left: 30px;
-                text-align: center;
-                font-weight: bolder;
+            .figureF{
+                position: relative;
+                .imgVs{
+                    width: 20em;
+                }
+            }
+                .figcaptionF{
+                    display: none;
             }
 
             .tablaB{
@@ -842,13 +864,15 @@
                 border-bottom: solid;
                 border-radius: 10%;
             }
-            .parrafoF {
-                margin-left: 0px;
-                margin-bottom: 2em;
-                text-align: center;
-                font-weight: bolder;
+            .figureF{
+                position: relative;
+                .imgVs{
+                    width: 20em;
+                }
             }
-
+                .figcaptionF{
+                    display: none;
+            }
             .tablaB{
                 display: grid;
                 justify-content: center;
@@ -1163,13 +1187,14 @@
                     text-align: center;
                 }
             }
-            .h2F{
-                font-size: 2em;
-                font-weight: bold;
-                color: rgb(4, 53, 14);
-                margin-left: 0px;
-                border-bottom: solid;
-                border-radius: 10%;
+            .figureF{
+                position: relative;
+                .imgVs{
+                    width: 20em;
+                }
+            }
+                .figcaptionF{
+                    display: none;
             }
             .parrafoF {
                 margin-left: 0px;

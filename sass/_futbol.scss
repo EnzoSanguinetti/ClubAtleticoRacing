@@ -45,6 +45,7 @@
                 border: solid 2px;
                 margin-bottom: 5em;
                 margin-top: 5em;
+                margin-left: 2em;
                 background-color: rgb(246, 248, 250);
             }
                 thead{
@@ -64,14 +65,32 @@
                 font-size: 2em;
                 font-weight: bold;
                 color: rgb(4, 53, 14);
-                margin-left: 150px;
+                margin-left: 50px;
                 border-bottom: solid;
                 border-radius: 10%;
             }
-            .parrafoF {
-                margin-left: 50px;
-                text-align: center;
-                font-weight: bolder;
-                color: black;
+            .figureF:hover .figcaptionF{
+                display: block;
+            }
+            .figureF{
+                position: relative;
+                .imgVs{
+                    width: 30em;
+                }
+            }
+                .figcaptionF{
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoF {
+                        text-align: center;
+                        padding: 3.5em;
+                        font: 1.2em Verdana;
+                        color: white;
+                }
             }
 }
