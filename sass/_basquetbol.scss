@@ -34,9 +34,32 @@
             }
     }
     .h2B{
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: bold;
         color: rgb(4, 53, 14);
-        margin-right: 70px;
+    }
+    .figureB:hover .figcaptionB{
+        display: block;
+    }
+    .figureB{
+        position: relative;
+        .imgvsB{
+            width: 30em;
+        }
+    }
+        .figcaptionB{
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, .7);
+            .parrafoB{
+                text-align: center;
+                padding: 3.5em;
+                font: 1.1em Verdana;
+                color: white;
+        }
     }
 }

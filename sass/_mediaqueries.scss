@@ -272,7 +272,31 @@
         font-size: 2em;
         font-weight: bold;
         color: rgb(4, 53, 14);
-        margin-right: 50px;
+        margin-right: 0px;
+    }
+    .figureB:hover .figcaptionB{
+        display: block;
+    }
+    .figureB{
+        position: relative;
+        .imgvsB{
+            width: 20em;
+        }
+    }
+        .figcaptionB{
+            display: none;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            background-color: rgba(0, 0, 0, .7);
+            .parrafoB{
+                text-align: center;
+                padding: 1.7em;
+                font: 1em Verdana;
+                color: white;
+        }
     }
 
     .mainG{
@@ -537,6 +561,9 @@
                 color: rgb(4, 53, 14);
                 margin-left: none;
             }
+            .figureF:hover .figcaptionF{
+                display: block;
+            }
             .figureF{
                 position: relative;
                 .imgVs{
@@ -545,18 +572,30 @@
             }
                 .figcaptionF{
                     display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoF {
+                        text-align: center;
+                        padding: 2.2em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
 
             .tablaB{
                 display: grid;
-                justify-content: end;
+                justify-content: center;
             }
             
             .parrafoB{
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: column-reverse;
                 align-items: center;
-                margin-right: 20px;
+                margin-right: none;
                 text-align: center;
                 font-weight: bolder;
                 color: black;
@@ -564,7 +603,7 @@
                     width: 30%;
                     border: solid 2px;
                     margin-bottom: 5em;
-                    margin-top: 5em;
+                    margin-top: 1em;
                     background-color: rgb(246, 248, 250);
                 }
                     thead{
@@ -584,7 +623,31 @@
                 font-size: 2em;
                 font-weight: bold;
                 color: rgb(4, 53, 14);
-                margin-right: 50px;
+                margin-right: 0px;
+            }
+            .figureB:hover .figcaptionB{
+                display: block;
+            }
+            .figureB{
+                position: relative;
+                .imgvsB{
+                    width: 20em;
+                }
+            }
+                .figcaptionB{
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoB{
+                        text-align: center;
+                        padding: 1.9em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
 
             .mainG{
@@ -864,6 +927,9 @@
                 border-bottom: solid;
                 border-radius: 10%;
             }
+            .figureF:hover .figcaptionF{
+                display: block;
+            }
             .figureF{
                 position: relative;
                 .imgVs{
@@ -872,6 +938,18 @@
             }
                 .figcaptionF{
                     display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoF {
+                        text-align: center;
+                        padding: 2.2em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
             .tablaB{
                 display: grid;
@@ -890,7 +968,7 @@
                     width: 30%;
                     border: solid 2px;
                     margin-bottom: 5em;
-                    margin-top: 2em;
+                    margin-top: 0em;
                     background-color: rgb(246, 248, 250);
                 }
                     thead{
@@ -911,6 +989,30 @@
                 font-weight: bold;
                 color: rgb(4, 53, 14);
                 margin-right: 0px;
+            }
+            .figureB:hover .figcaptionB{
+                display: block;
+            }
+            .figureB{
+                position: relative;
+                .imgvsB{
+                    width: 20em;
+                }
+            }
+                .figcaptionB{
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoB{
+                        text-align: center;
+                        padding: 1.9em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
 
     tr, th, td{
@@ -1155,7 +1257,7 @@
                 font-size: 1.2em;
             }
             .raVsAr {
-                font-size: 1.5em;
+                font-size: 1.2em;
                 color: darkgreen;
             }
         }
@@ -1187,6 +1289,17 @@
                     text-align: center;
                 }
             }
+            .h2F{
+                font-size: 2em;
+                font-weight: bold;
+                color: rgb(4, 53, 14);
+                margin-left: 0px;
+                border-bottom: solid;
+                border-radius: 10%;
+            }
+            .figureF:hover .figcaptionF{
+                display: block;
+            }
             .figureF{
                 position: relative;
                 .imgVs{
@@ -1195,12 +1308,18 @@
             }
                 .figcaptionF{
                     display: none;
-            }
-            .parrafoF {
-                margin-left: 0px;
-                margin-bottom: 2em;
-                text-align: center;
-                font-weight: bolder;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoF {
+                        text-align: center;
+                        padding: 2.2em;
+                        font: 1em Verdana;
+                        color: white;
+                }
             }
 
             .tablaB{
@@ -1241,6 +1360,30 @@
                 font-weight: bold;
                 color: rgb(4, 53, 14);
                 margin-right: 0px;
+            }
+            .figureB:hover .figcaptionB{
+                display: block;
+            }
+            .figureB{
+                position: relative;
+                .imgvsB{
+                    width: 17em;
+                }
+            }
+                .figcaptionB{
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    bottom: 5px;
+                    right: 5px;
+                    background-color: rgba(0, 0, 0, .7);
+                    .parrafoB{
+                        text-align: center;
+                        padding: 2.3em;
+                        font: 0.8em Verdana;
+                        color: white;
+                }
             }
 
             .mainG{

@@ -382,7 +382,31 @@ body {
     font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-right: 50px;
+    margin-right: 0px;
+  }
+  .figureB:hover .figcaptionB {
+    display: block;
+  }
+  .figureB {
+    position: relative;
+  }
+  .figureB .imgvsB {
+    width: 20em;
+  }
+  .figcaptionB {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionB .parrafoB {
+    text-align: center;
+    padding: 1.7em;
+    font: 1em Verdana;
+    color: white;
   }
   .mainG {
     display: grid;
@@ -625,6 +649,9 @@ body {
     color: rgb(4, 53, 14);
     margin-left: none;
   }
+  .figureF:hover .figcaptionF {
+    display: block;
+  }
   .figureF {
     position: relative;
   }
@@ -633,16 +660,28 @@ body {
   }
   .figcaptionF {
     display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionF .parrafoF {
+    text-align: center;
+    padding: 2.2em;
+    font: 1em Verdana;
+    color: white;
   }
   .tablaB {
     display: grid;
-    justify-content: end;
+    justify-content: center;
   }
   .parrafoB {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     align-items: center;
-    margin-right: 20px;
+    margin-right: none;
     text-align: center;
     font-weight: bolder;
     color: black;
@@ -651,7 +690,7 @@ body {
     width: 30%;
     border: solid 2px;
     margin-bottom: 5em;
-    margin-top: 5em;
+    margin-top: 1em;
     background-color: rgb(246, 248, 250);
   }
   .parrafoB thead {
@@ -670,7 +709,31 @@ body {
     font-size: 2em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-right: 50px;
+    margin-right: 0px;
+  }
+  .figureB:hover .figcaptionB {
+    display: block;
+  }
+  .figureB {
+    position: relative;
+  }
+  .figureB .imgvsB {
+    width: 20em;
+  }
+  .figcaptionB {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionB .parrafoB {
+    text-align: center;
+    padding: 1.9em;
+    font: 1em Verdana;
+    color: white;
   }
   .mainG {
     display: grid;
@@ -928,6 +991,9 @@ body {
     border-bottom: solid;
     border-radius: 10%;
   }
+  .figureF:hover .figcaptionF {
+    display: block;
+  }
   .figureF {
     position: relative;
   }
@@ -936,6 +1002,18 @@ body {
   }
   .figcaptionF {
     display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionF .parrafoF {
+    text-align: center;
+    padding: 2.2em;
+    font: 1em Verdana;
+    color: white;
   }
   .tablaB {
     display: grid;
@@ -954,7 +1032,7 @@ body {
     width: 30%;
     border: solid 2px;
     margin-bottom: 5em;
-    margin-top: 2em;
+    margin-top: 0em;
     background-color: rgb(246, 248, 250);
   }
   .parrafoB thead {
@@ -974,6 +1052,30 @@ body {
     font-weight: bold;
     color: rgb(4, 53, 14);
     margin-right: 0px;
+  }
+  .figureB:hover .figcaptionB {
+    display: block;
+  }
+  .figureB {
+    position: relative;
+  }
+  .figureB .imgvsB {
+    width: 20em;
+  }
+  .figcaptionB {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionB .parrafoB {
+    text-align: center;
+    padding: 1.9em;
+    font: 1em Verdana;
+    color: white;
   }
   tr, th, td {
     padding: 10px;
@@ -1198,7 +1300,7 @@ body {
     font-size: 1.2em;
   }
   .gridMain .divF .raVsAr {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: darkgreen;
   }
   .tablaF {
@@ -1228,6 +1330,17 @@ body {
     padding: 5px;
     text-align: center;
   }
+  .h2F {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(4, 53, 14);
+    margin-left: 0px;
+    border-bottom: solid;
+    border-radius: 10%;
+  }
+  .figureF:hover .figcaptionF {
+    display: block;
+  }
   .figureF {
     position: relative;
   }
@@ -1236,12 +1349,18 @@ body {
   }
   .figcaptionF {
     display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
   }
-  .parrafoF {
-    margin-left: 0px;
-    margin-bottom: 2em;
+  .figcaptionF .parrafoF {
     text-align: center;
-    font-weight: bolder;
+    padding: 2.2em;
+    font: 1em Verdana;
+    color: white;
   }
   .tablaB {
     display: grid;
@@ -1280,6 +1399,30 @@ body {
     font-weight: bold;
     color: rgb(4, 53, 14);
     margin-right: 0px;
+  }
+  .figureB:hover .figcaptionB {
+    display: block;
+  }
+  .figureB {
+    position: relative;
+  }
+  .figureB .imgvsB {
+    width: 17em;
+  }
+  .figcaptionB {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionB .parrafoB {
+    text-align: center;
+    padding: 2.3em;
+    font: 0.8em Verdana;
+    color: white;
   }
   .mainG {
     display: grid;
@@ -1562,10 +1705,33 @@ header .div1 .logoyh1 .logo {
     text-align: center;
   }
   .h2B {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     color: rgb(4, 53, 14);
-    margin-right: 70px;
+  }
+  .figureB:hover .figcaptionB {
+    display: block;
+  }
+  .figureB {
+    position: relative;
+  }
+  .figureB .imgvsB {
+    width: 30em;
+  }
+  .figcaptionB {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .figcaptionB .parrafoB {
+    text-align: center;
+    padding: 3.5em;
+    font: 1.1em Verdana;
+    color: white;
   }
 }
 /* css para contacto.html */
