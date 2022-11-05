@@ -235,6 +235,7 @@ body {
     margin-top: 1.7em;
     font-size: 1.4em;
     font-weight: bolder;
+    color: black;
   }
   .sectionInsti .carousel-fade {
     width: 70%;
@@ -252,10 +253,25 @@ body {
     margin-top: 1.7em;
     font-size: 1.4em;
     font-weight: bolder;
+    color: black;
   }
   .sectionInstiDos .carousel-fade2 {
     width: 70%;
     margin-left: 9em;
+  }
+  .sectionInstiDos .himno {
+    margin-top: 1.2em;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .himnoP {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    color: none;
   }
   .gridMain {
     display: grid;
@@ -313,6 +329,7 @@ body {
     background-color: rgb(165, 165, 165);
   }
   .parrafoF th, .parrafoF td {
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
   }
@@ -591,6 +608,20 @@ body {
     width: 70%;
     margin-left: 7em;
   }
+  .sectionInstiDos .himno {
+    margin-top: 1.2em;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .himnoP {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    color: none;
+  }
   .gridMain {
     display: grid;
     grid-template-columns: 4fr;
@@ -640,6 +671,7 @@ body {
     background-color: rgb(165, 165, 165);
   }
   .parrafoF th, .parrafoF td {
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
   }
@@ -931,6 +963,20 @@ body {
     margin-left: 3em;
     margin-bottom: 2em;
   }
+  .sectionInstiDos .himno {
+    margin-top: 1.2em;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .himnoP {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    color: none;
+  }
   .gridMain {
     display: grid;
     grid-template-columns: 4fr;
@@ -980,6 +1026,7 @@ body {
     background-color: rgb(165, 165, 165);
   }
   .parrafoF th, .parrafoF td {
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
   }
@@ -1278,6 +1325,20 @@ body {
     width: 80%;
     margin-left: 2.5em;
   }
+  .sectionInstiDos .himno {
+    margin-top: 1.2em;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .sectionInstiDos .himnoP {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bolder;
+    color: none;
+  }
   .gridMain {
     display: grid;
     grid-template-columns: 4fr;
@@ -1327,6 +1388,7 @@ body {
     background-color: rgb(165, 165, 165);
   }
   .parrafoF th, .parrafoF td {
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
   }
@@ -1540,7 +1602,7 @@ header .div1 .logoyh1 .logo {
     margin-top: 1.375em;
     text-align: center;
     color: rgb(4, 53, 14);
-    font-size: 3rem;
+    font-size: 2.5em;
     font-weight: bold;
     box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
   }
@@ -1556,7 +1618,7 @@ header .div1 .logoyh1 .logo {
     width: 50%;
   }
   .tituloBasquetbol {
-    margin-top: 3.25em;
+    margin-top: 2.5em;
     text-align: center;
     color: rgb(4, 53, 14);
     font-size: 3em;
@@ -1574,6 +1636,17 @@ header .div1 .logoyh1 .logo {
     margin-left: 320px;
     width: 50%;
     margin-bottom: 70px;
+  }
+  .himno {
+    margin-top: 1.2em;
+    color: rgb(4, 53, 14);
+    box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+  }
+  .himnoP {
+    margin-top: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bolder;
   }
 }
 /* css para futbol.html */
@@ -1635,6 +1708,7 @@ header .div1 .logoyh1 .logo {
     background-color: rgb(165, 165, 165);
   }
   .parrafoF th, .parrafoF td {
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
   }

@@ -118,6 +118,7 @@
             margin-top: 1.7em;
             font-size: 1.4em;
             font-weight: bolder;
+            color: black;
         }
         .carousel-fade{
             width: 70%;
@@ -138,10 +139,25 @@
             margin-top: 1.7em;
             font-size: 1.4em;
             font-weight: bolder;
+            color: black;
         }
         .carousel-fade2{
             width: 70%;
             margin-left: 9em;
+        }
+        .himno{
+            margin-top: 1.2em;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .himnoP{
+            margin-top: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 1em;
+            text-align: center;
+            font-weight: bolder;
+            color: none;
         }
     }
 
@@ -200,6 +216,7 @@
                     background-color: rgb(165, 165, 165);
                 }
                 th, td{
+                    font-weight: bolder;
                     padding: 5px;
                     text-align: center;
                 }
@@ -500,6 +517,20 @@
             width: 70%;
             margin-left: 7em;
         }
+        .himno{
+            margin-top: 1.2em;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .himnoP{
+            margin-top: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 1em;
+            text-align: center;
+            font-weight: bolder;
+            color: none;
+        }
     }
 
 
@@ -551,6 +582,7 @@
                     background-color: rgb(165, 165, 165);
                 }
                 th, td{
+                    font-weight: bolder;
                     padding: 5px;
                     text-align: center;
                 }
@@ -865,6 +897,20 @@
             margin-left: 3em;
             margin-bottom: 2em;
         }
+        .himno{
+            margin-top: 1.2em;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .himnoP{
+            margin-top: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 1em;
+            text-align: center;
+            font-weight: bolder;
+            color: none;
+        }
     }
 
     .gridMain{
@@ -915,6 +961,7 @@
                     background-color: rgb(165, 165, 165);
                 }
                 th, td{
+                    font-weight: bolder;
                     padding: 5px;
                     text-align: center;
                 }
@@ -1235,6 +1282,20 @@
             width: 80%;
             margin-left: 2.5em;
         }
+        .himno{
+            margin-top: 1.2em;
+            color: rgb(4, 53, 14);
+            box-shadow: 0.8125em -0.5625em 1.1875em 1.25em rgba(0, 0, 0, 0.3);
+        }
+        .himnoP{
+            margin-top: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 1em;
+            text-align: center;
+            font-weight: bolder;
+            color: none;
+        }
     }
 
     .gridMain{
@@ -1285,6 +1346,7 @@
                     background-color: rgb(165, 165, 165);
                 }
                 th, td{
+                    font-weight: bolder;
                     padding: 5px;
                     text-align: center;
                 }
